@@ -1,0 +1,293 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_EditorStory/EXP_EditorStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Story_editor"
+names = {
+"intro_science": 1,
+"intro_science_followup": 3,
+"intro_text": 2
+}
+story = {
+1: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Scientist's Introduction following cinematic",
+"name": "intro_science",
+"nodes": {
+1: {
+"graph_offset": Vector2( 0, 80 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Welcome to Ravenworks.",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 520, 80 ),
+"links": {
+0: 6,
+1: 4,
+2: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "Are you ready to furfill your function?
+<choice>Yes</choice>
+<choice>No</choice>
+<choice>Where am I?</choice>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 520, 320 ),
+"links": {
+0: 2,
+1: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "You are in Ravenworks cloining facility in Central City.
+<choice>Okay</choice>
+<choice>Central City?</choice>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 520, -120 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Hmmm... The obidence chip must be malfunctioning.",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 520, 540 ),
+"links": {
+0: 8
+},
+"rect_size": Vector2( 441, 165 ),
+"slot_amount": 1,
+"text": "Central City is the location of the five corporate seats of power.",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 1000, 80 ),
+"links": {
+0: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Excellent.",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 1480, 80 ),
+"links": {
+0: 10
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "There are reports that an executive here at Ravenworks is
+working against the company's interests.",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( 1020, 540 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "You died hundreds of years ago and I do not have time to explain 
+to you over 100 years of history.",
+"type": "line"
+},
+9: {
+"graph_offset": Vector2( 2440, 80 ),
+"links": {
+0: 12
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Do you accept this programming?
+<choice>Yes</choice>",
+"type": "line"
+},
+10: {
+"graph_offset": Vector2( 1960, 80 ),
+"links": {
+0: 9,
+1: 11
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "The CEO of Ravenworks has decided to task you with finding
+and killing this individual.
+<choice>Okay</choice>
+<choice>Why me?</choice>",
+"type": "line"
+},
+11: {
+"graph_offset": Vector2( 1960, 300 ),
+"links": {
+0: 9
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I do not know.",
+"type": "line"
+},
+12: {
+"graph_offset": Vector2( 2920, 80 ),
+"links": {
+0: 13
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Good. You have been given Level 3 security clearance
+in Ravenwork facilities.",
+"type": "line"
+},
+13: {
+"graph_offset": Vector2( 3400, 80 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "CEO Grant Blevins would like to speak to you about the 
+investigation. His office is located at the top of
+Central Tower.",
+"type": "line"
+}
+}
+},
+2: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Cinematic Intro Text",
+"name": "intro_text",
+"nodes": {
+1: {
+"graph_offset": Vector2( 60, -300 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Name: Veronica Dohwns",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 540, -300 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Occupation: Private Investigator",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 1020, -300 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Day of Death: 8-21-2032",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 1500, -300 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Intializing...",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 1980, -300 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Welcome Veroinica!",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 2460, -300 ),
+"links": {
+0: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "In correspondance with HR 53151
+Ravenetworks has repurposed your mind
+for our services.",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 2940, -300 ),
+"links": {
+0: 8
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Transfering to physical system...",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( 3420, -300 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Caution: Extreme pain is likely.",
+"type": "line"
+}
+}
+},
+3: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Interacting with scientist after intro",
+"name": "intro_science_followup",
+"nodes": {
+1: {
+"graph_offset": Vector2( -1300, -880 ),
+"links": {
+1: 2
+},
+"rect_size": Vector2( 441, 172 ),
+"slot_amount": 2,
+"text": "Did you need something?
+<choice>No</choice>
+<choice>You are the traitor!</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -780, -840 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Don't make such false accusations. Get back to your job
+and find the real culpurit.",
+"type": "line"
+}
+}
+}
+}
+available_dids = [  ]
+groups = [ "Introduction" ]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Mystery Unsolved.ogg-c3936a0ae548f6e84dcdb0df4b96db96.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/Dystopian/Mystery Unsolved.ogg"
+dest_files=[ "res://.import/Mystery Unsolved.ogg-c3936a0ae548f6e84dcdb0df4b96db96.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

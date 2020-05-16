@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/default.wav-9e65f8cb59e54d70a2ddefa3b607d2c2.sample"
+
+[deps]
+
+source_file="res://Assets/Sfx/Speakers/default.wav"
+dest_files=[ "res://.import/default.wav-9e65f8cb59e54d70a2ddefa3b607d2c2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

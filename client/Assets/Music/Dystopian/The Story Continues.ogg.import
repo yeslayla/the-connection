@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/The Story Continues.ogg-8ba2fc4bd692fc3cc6ccc662d1bde808.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/Dystopian/The Story Continues.ogg"
+dest_files=[ "res://.import/The Story Continues.ogg-8ba2fc4bd692fc3cc6ccc662d1bde808.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,3 @@
+[submodule "client/Resources/GodotThings"]
+	path = client/Resources/GodotThings
+	url = git@github.com:CptPotato/GodotThings.git

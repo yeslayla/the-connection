@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Surveillance.ogg-c5f017c00cb3886d3501ed81386a73cb.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/Dystopian/Surveillance.ogg"
+dest_files=[ "res://.import/Surveillance.ogg-c5f017c00cb3886d3501ed81386a73cb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

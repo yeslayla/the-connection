@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Empty Streets.ogg-7e9965eb3ca054bd216157ae70233bf9.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/Dystopian/Empty Streets.ogg"
+dest_files=[ "res://.import/Empty Streets.ogg-7e9965eb3ca054bd216157ae70233bf9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
