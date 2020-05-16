@@ -7,11 +7,16 @@ script = ExtResource( 1 )
 TYPE = "EXP_Story_editor"
 names = {
 "into_speak_ceo": 5,
+"intro_major_worker": 11,
 "intro_meet_ceo": 4,
+"intro_misc_worker_1": 9,
+"intro_misc_worker_2": 10,
 "intro_science": 1,
 "intro_science_followup": 3,
+"intro_shipping_codex": 8,
 "intro_text": 2,
-"intro_transportship": 6
+"intro_transportship": 6,
+"unconfigured": 7
 }
 story = {
 1: {
@@ -152,7 +157,7 @@ and killing this individual.
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Good. You have been given Level 3 security clearance
+"text": "Good. You have been given Level 1 security clearance
 in Ravenwork facilities.",
 "type": "line"
 },
@@ -688,6 +693,226 @@ not be too far out of reach.",
 "slot_amount": 1,
 "text": "This seems to be a Ravenetworks transport, but it's empty. Is this
 suppose to be carrying the biological shipment?",
+"type": "line"
+}
+}
+},
+7: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Default interaction for dialog interaction",
+"name": "unconfigured",
+"nodes": {
+1: {
+"graph_offset": Vector2( 200, 20 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "This is an object.",
+"type": "line"
+}
+}
+},
+8: {
+"available_nid": [ 2 ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Messages related to biological materials",
+"name": "intro_shipping_codex",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 448, 170 ),
+"slot_amount": 1,
+"text": "Cargo load:
+Organic Matter - MISSING
+Stem Cells - MISSING
+Cubic Carbon - MISSING",
+"type": "line"
+}
+}
+},
+9: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Misc worker talk",
+"name": "intro_misc_worker_1",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "How are we missing another shipment?",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 340, -280 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I hope the supervisor doesn't replace us.",
+"type": "line"
+}
+}
+},
+10: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Misc worker talk",
+"name": "intro_misc_worker_2",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 3,
+1: 2,
+2: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "Hey Aura! How have you been?
+<choice>Aura?</choice>
+<choice>You know me?</choice>
+<choice>I am Scene.</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 440, -200 ),
+"links": {
+0: 5,
+1: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "Yeah, we met a few days ago.
+<choice>Weird</choice>
+<choice>No?</choice>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 440, -360 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Oh... nevermind.",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 440, 0 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Oh, sorry Scene.",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 920, -200 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Yeah, we don't see many faces like yours around here.",
+"type": "line"
+}
+}
+},
+11: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Work who drove spacecraft",
+"name": "intro_major_worker",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, -180 ),
+"links": {
+0: 2,
+1: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "I can't believe we got rerouted.
+<choice>Rerouted?</choice>
+<choice>What happened to the cargo?</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 540, -220 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "During the flight over here, the navigation computer redirected to
+the lower levels.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 1020, -220 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "When I got there, Ravenworks workers unloaded the craft.",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 540, -40 ),
+"links": {
+0: 5,
+1: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "Are you looking for it?
+<choice>Yes</choice>
+<choice>No</choice>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 1020, -40 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I lost the cargo after my stop at the lower levels. I was just
+following the navigation computer and it was taken by
+Ravenwork staff!",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 1500, -40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Please do not terminate me!",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 1020, 140 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Oh, well it was unloaded by Ravenwork staff at the lower level.",
 "type": "line"
 }
 }

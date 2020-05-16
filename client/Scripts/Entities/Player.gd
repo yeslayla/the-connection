@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+export var clearance_level = 0
+
 # Environment variables
 export var baseGravity : float = 9.8
 
@@ -23,10 +25,6 @@ func remove_interactable(interactable):
 	if loc >= 0:
 		interactables.remove(loc)
 
-func _process(delta):
-	if Input.is_action_just_pressed("ui_accept") and len(interactables) > 0 and not gui.is_in_dialog():
-		interactables[0].interact()
-
 func _physics_process(delta):
 	
 	# Gravity
@@ -38,6 +36,8 @@ func _physics_process(delta):
 		gui = get_node("/root/World/GUI")
 	elif not gui.is_in_dialog():
 		user_input()
+	else:
+		moveMotion = 0
 	
 	# Apply velocity limits
 	moveMotion = clamp(moveMotion, -maxMoveVelocity, maxMoveVelocity)
@@ -49,6 +49,9 @@ func _physics_process(delta):
 	
 
 func user_input():
+	if Input.is_action_just_pressed("ui_accept") and len(interactables) > 0 and not gui.is_in_dialog():
+		interactables[0].interact()
+	
 	if is_on_floor() and Input.is_action_just_pressed("ui_up") and Input.is_action_pressed("ui_down"):
 		position.y = position.y + 2
 		return

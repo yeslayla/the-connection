@@ -83,5 +83,4 @@ func move_dialog_forward(decision = 0):
 	
 func _process(delta):
 	if(Input.is_action_just_pressed("ui_accept") and choices == 0 and final_display_message == gui.current_dialog()):
-		print("YEET")
 		move_dialog_forward(0)

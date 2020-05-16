@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/Materials/SmoothScaling.tres" type="Material" id=1]
 [ext_resource path="res://Assets/Art/Characters/player_parts.png" type="Texture" id=2]
-[ext_resource path="res://animation_reference.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Art/basic_light.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Entities/Player.gd" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=1]
@@ -870,13 +870,9 @@ anims/Idle = SubResource( 17 )
 anims/RunLeft = SubResource( 18 )
 anims/RunRight = SubResource( 19 )
 
-[node name="Sprite" type="Sprite" parent="."]
-visible = false
-modulate = Color( 1, 1, 1, 0.423529 )
-position = Vector2( -28.5601, 3.4707 )
-scale = Vector2( 0.055, 0.055 )
-texture = ExtResource( 3 )
-flip_h = true
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 20 )
+
+[node name="Light2D" type="Light2D" parent="."]
+texture = ExtResource( 3 )
+energy = 0.25

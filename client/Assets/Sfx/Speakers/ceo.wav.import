@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ceo.wav-aab08c0f38fc04ff530aa8c0850ff092.sample"
+
+[deps]
+
+source_file="res://Assets/Sfx/Speakers/ceo.wav"
+dest_files=[ "res://.import/ceo.wav-aab08c0f38fc04ff530aa8c0850ff092.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

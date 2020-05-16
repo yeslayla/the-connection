@@ -9,7 +9,7 @@ func _ready():
 	gui_manager = $GUI
 	audio_player = AudioStreamPlayer.new()
 	add_child(audio_player)
-	$CanvasLayer/ColorRect.show()
+	$Fader/ColorRect.show()
 	play_sound(preload("res://Assets/Sfx/intro/processed.wav"))
 
 func play_sound(audio_stream):
