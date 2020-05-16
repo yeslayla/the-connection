@@ -12,6 +12,20 @@ export var jumpVelocity : float = -150
 var moveMotion : float = 0 # Player Input ( <- & -> )
 var motion : Vector2 = Vector2(0,0) # Player's current velocity
 
+var gui
+
+var interactables = []
+
+func add_interactable(interactable):
+	interactables.append(interactable)
+func remove_interactable(interactable):
+	var loc = interactables.find(interactable)
+	if loc >= 0:
+		interactables.remove(loc)
+
+func _process(delta):
+	if Input.is_action_just_pressed("ui_accept") and len(interactables) > 0:
+		interactables[0].interact()
 
 func _physics_process(delta):
 	
@@ -20,7 +34,10 @@ func _physics_process(delta):
 	if is_on_floor():
 		motion.y = 0
 	
-	user_input()
+	if not gui:
+		gui = get_node("/root/World/GUI")
+	elif not gui.is_in_dialog():
+		user_input()
 	
 	# Apply velocity limits
 	moveMotion = clamp(moveMotion, -maxMoveVelocity, maxMoveVelocity)
@@ -32,6 +49,10 @@ func _physics_process(delta):
 	
 
 func user_input():
+	if is_on_floor() and Input.is_action_just_pressed("ui_up") and Input.is_action_pressed("ui_down"):
+		position.y = position.y + 2
+		return
+	
 	if(Input.is_action_pressed("ui_left")):
 		moveMotion -= moveAcceleration
 	if(Input.is_action_pressed("ui_right")):

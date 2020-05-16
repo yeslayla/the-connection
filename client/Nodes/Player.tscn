@@ -6,82 +6,82 @@
 [ext_resource path="res://Scripts/Entities/Player.gd" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=1]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 1, 7, 3, 4 )
 
 [sub_resource type="AtlasTexture" id=2]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 2, 6, 1, 1 )
 
 [sub_resource type="AtlasTexture" id=3]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 1, 1, 3, 4 )
 
 [sub_resource type="AtlasTexture" id=4]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 7, 8, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=5]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 6, 10, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=6]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 6, 12, 1, 1 )
 
 [sub_resource type="AtlasTexture" id=7]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 9, 8, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=8]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 10, 10, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=9]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 1, 11, 3, 2 )
 
 [sub_resource type="AtlasTexture" id=10]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 1, 13, 3, 1 )
 
 [sub_resource type="AtlasTexture" id=11]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 1, 14, 3, 1 )
 
 [sub_resource type="AtlasTexture" id=12]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 1, 15, 3, 1 )
 
 [sub_resource type="AtlasTexture" id=13]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 1, 17, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=14]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 1, 19, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=15]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 3, 17, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=16]
-flags = 12
+flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 3, 19, 1, 2 )
 

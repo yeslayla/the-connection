@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player_parts.png-f69e345f37ad405be3288ca78a4b7531.stex"
+path="res://.import/platform.png-fa6c1000359a082b3ed63552d71e9023.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Characters/player_parts.png"
-dest_files=[ "res://.import/player_parts.png-f69e345f37ad405be3288ca78a4b7531.stex" ]
+source_file="res://Assets/Art/platform.png"
+dest_files=[ "res://.import/platform.png-fa6c1000359a082b3ed63552d71e9023.stex" ]
 
 [params]
 
@@ -22,7 +22,7 @@ compress/normal_map=0
 flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
-flags/anisotropic=true
+flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false

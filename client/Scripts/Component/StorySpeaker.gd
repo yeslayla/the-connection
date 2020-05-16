@@ -30,11 +30,11 @@ func start_dialog(record : String):
 
 func start_dialog_did(dialog_id : int):
 	gui = get_node("/root/World/GUI")
-	
-	nid = 1
-	did = dialog_id
-	
-	process_message(story_reader.get_text(did, nid))
+	if not gui.is_in_dialog():
+		nid = 1
+		did = dialog_id
+		
+		process_message(story_reader.get_text(did, nid))
 	
 func has_next_node():
 	return story_reader.has_slot(did, nid, 0)

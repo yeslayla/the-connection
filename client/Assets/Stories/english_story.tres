@@ -6,6 +6,7 @@
 script = ExtResource( 1 )
 TYPE = "EXP_Story_editor"
 names = {
+"intro_meet_ceo": 4,
 "intro_science": 1,
 "intro_science_followup": 3,
 "intro_text": 2
@@ -180,7 +181,7 @@ Central Tower.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Name: Veronica Dohwns",
+"text": "Name: Veronica SCENE Gilmore",
 "type": "line"
 },
 2: {
@@ -220,7 +221,7 @@ Central Tower.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Welcome Veroinica!",
+"text": "Welcome SCENE!",
 "type": "line"
 },
 6: {
@@ -264,8 +265,9 @@ for our services.",
 "name": "intro_science_followup",
 "nodes": {
 1: {
-"graph_offset": Vector2( -1300, -880 ),
+"graph_offset": Vector2( -1300, -860 ),
 "links": {
+0: 3,
 1: 2
 },
 "rect_size": Vector2( 441, 172 ),
@@ -276,7 +278,7 @@ for our services.",
 "type": "line"
 },
 2: {
-"graph_offset": Vector2( -780, -840 ),
+"graph_offset": Vector2( -780, -820 ),
 "links": {
 
 },
@@ -284,6 +286,346 @@ for our services.",
 "slot_amount": 1,
 "text": "Don't make such false accusations. Get back to your job
 and find the real culpurit.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -780, -1000 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Okay then.",
+"type": "line"
+}
+}
+},
+4: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "First interaction with CEO Grant Blevins",
+"name": "intro_meet_ceo",
+"nodes": {
+1: {
+"graph_offset": Vector2( 60, 0 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Hello Scene.",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 540, 0 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "It's good to see they have not eliminated you yet. Most my attempts
+to find the mole up until this point have ended in swift failure.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 1020, 0 ),
+"links": {
+0: 7,
+1: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "You will not disappoint me, right Scene?
+<choice>Of course not!</choice>
+<choice>I will do my best</choice>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 1500, 100 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Ha! Such a 21st century phrase.",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 1980, 100 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "You will need more than just your wits to defeat this
+traitor.",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 2460, 20 ),
+"links": {
+0: 8
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "So much lost...",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 1760, -80 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "We will see. You had a great track record in the 21st century,
+but we both remeber how your final job went.",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( 2940, 20 ),
+"links": {
+0: 9,
+1: 10
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "What do you think of our facility here so far?
+<choice>It's amazing!</choice>
+<choice>I haven't seen much yet.</choice>",
+"type": "line"
+},
+9: {
+"graph_offset": Vector2( 3760, 20 ),
+"links": {
+0: 11
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "It's always interesting hearing the perspectives of those from the past.",
+"type": "line"
+},
+10: {
+"graph_offset": Vector2( 3380, 240 ),
+"links": {
+0: 9
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Unfortunate.",
+"type": "line"
+},
+11: {
+"graph_offset": Vector2( 4240, 20 ),
+"links": {
+0: 12
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Now away with the pleasantries.",
+"type": "line"
+},
+12: {
+"graph_offset": Vector2( 4720, 20 ),
+"links": {
+0: 13
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "There has been a concerning amount of leaks of secret projects
+and internal data to our competitor Duke Enterprises.",
+"type": "line"
+},
+13: {
+"graph_offset": Vector2( 5200, 20 ),
+"links": {
+0: 14
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Due the volume and nature of the data, the one conspiring with
+the Dukes must have extremely high security clearance.",
+"type": "line"
+},
+14: {
+"graph_offset": Vector2( 5680, 20 ),
+"links": {
+0: 16
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "That is why I have given you nearly full access to our facilities.
+This traitor could be anyone.",
+"type": "line"
+},
+15: {
+"graph_offset": Vector2( 6660, 20 ),
+"links": {
+0: 17,
+1: 19,
+2: 20
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "Do you have any questions before we get started?
+<choice>Why me?</choice>
+<choice>What year is it?</choice>
+<choice>Where do I start?</choice>",
+"type": "line"
+},
+16: {
+"graph_offset": Vector2( 6160, 20 ),
+"links": {
+0: 15
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I'm trusting you Scene. It's not a common thing in our time, but I have
+little choice.",
+"type": "line"
+},
+17: {
+"graph_offset": Vector2( 7140, -100 ),
+"links": {
+0: 18
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I have always been sympathatic to societies of the past. Things were done...
+different than they are now.",
+"type": "line"
+},
+18: {
+"graph_offset": Vector2( 7620, -100 ),
+"links": {
+0: 15
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "You were one of the best investigators of your time! It was sad
+you got caught up in the events of the old capital.",
+"type": "line"
+},
+19: {
+"graph_offset": Vector2( 7140, 80 ),
+"links": {
+0: 15
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "It 3024, making it around 1000 years since your death.",
+"type": "line"
+},
+20: {
+"graph_offset": Vector2( 7140, 260 ),
+"links": {
+0: 28,
+1: 21,
+2: 22
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "We have a shipment of biological materials coming in today. It seems
+like the sort of thing we have had troubles with recently.
+<choice>Okay, where?</choice>
+<choice>What sort of troubles?</choice>
+<choice>Biological materials?</choice>",
+"type": "line"
+},
+21: {
+"graph_offset": Vector2( 7620, 300 ),
+"links": {
+0: 24
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Some of the data ending up in the Duke's hands is shipping information.",
+"type": "line"
+},
+22: {
+"graph_offset": Vector2( 7620, 500 ),
+"links": {
+0: 23
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Yes, for our cloning facilities among other things.",
+"type": "line"
+},
+23: {
+"graph_offset": Vector2( 8100, 500 ),
+"links": {
+0: 27
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Without such shipments, you wouldn't be standing here.",
+"type": "line"
+},
+24: {
+"graph_offset": Vector2( 8100, 300 ),
+"links": {
+0: 25,
+1: 26
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "We have had too many missing shipments stopped by the coporate police.
+<choice>Coporate police?</choice>
+<choice>Why would they stop the shipments?</choice>",
+"type": "line"
+},
+25: {
+"graph_offset": Vector2( 8580, 260 ),
+"links": {
+0: 27
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Once democratic powers fell, enforcement was placed in the hand of the Corporate Collective,
+the closest thing to a centralized government.",
+"type": "line"
+},
+26: {
+"graph_offset": Vector2( 8580, 420 ),
+"links": {
+0: 27
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "In corporate politics, our opposition likes to put in place agreements that
+hinder our success. We are not alone in ignoring many of these agreements.",
+"type": "line"
+},
+27: {
+"graph_offset": Vector2( 9060, 260 ),
+"links": {
+0: 28
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Anyway,",
+"type": "line"
+},
+28: {
+"graph_offset": Vector2( 9580, 100 ),
+"links": {
+0: 29
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "This building's shipping facility is located on mid levels. They should
+not be too far out of reach.",
+"type": "line"
+},
+29: {
+"graph_offset": Vector2( 10060, 100 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Keep me up to date on your progress.",
 "type": "line"
 }
 }

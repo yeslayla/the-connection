@@ -14,5 +14,11 @@ func play_music(song, loop=true):
 		main_player.stream = track
 		main_player.play()
 
+func play_stream(track, loop = true):
+	looping = loop
+	main_player.stream = track
+	main_player.play()
+
 func stop_music():
 	main_player.stop()
+

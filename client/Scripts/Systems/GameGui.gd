@@ -1,21 +1,18 @@
 extends CanvasLayer
 
+func is_in_dialog():
+	return in_dialog
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+var in_dialog = false
 
 func set_dialog(message, speaker=""):
 	$Dialog.show()
+	in_dialog = true
 	$Dialog/Textbox/Speaker.text = speaker
 	$Dialog/Textbox/Body.text = message
 	
 func finish_dialog():
+	in_dialog = false
 	$Dialog.hide()
 
 func clear_choices():
