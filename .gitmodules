@@ -1,3 +1,6 @@
 [submodule "client/Resources/GodotThings"]
 	path = client/Resources/GodotThings
 	url = git@github.com:CptPotato/GodotThings.git
+[submodule "client/Assets/Proprietary"]
+	path = client/Assets/Proprietary
+	url = git@github.com:josephbmanley/the-connection-proprietary.git
