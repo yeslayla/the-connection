@@ -28,4 +28,4 @@ func _on_button_press(button):
 		"options":
 			get_parent().get_parent().get_node("OptionsDialog").popup_centered()
 		"bug":
-			OS.shell_open("https://github.com/josephbmanley")
+			OS.shell_open("https://github.com/josephbmanley/the-connection/issues/new?labels=bug&template=1_bug_report.md")
