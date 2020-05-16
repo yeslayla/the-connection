@@ -1,5 +1,7 @@
 extends "res://Scripts/Component/Speaker.gd"
 
+signal dialog_exited
+
 const Story_Reader_Class = preload("res://addons/EXP-System-Dialog/Reference_StoryReader/EXP_StoryReader.gd")
 const story_file = preload("res://Assets/Stories/english_story.tres")
 var story_reader = Story_Reader_Class.new()
@@ -69,6 +71,7 @@ func move_dialog_forward(decision = 0):
 		nid = story_reader.get_nid_from_slot(did, nid, decision)
 		process_message(story_reader.get_text(did, nid))
 	else:
+		emit_signal("dialog_exited")
 		gui.finish_dialog()
 	
 func _process(delta):

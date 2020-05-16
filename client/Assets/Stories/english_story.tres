@@ -6,6 +6,7 @@
 script = ExtResource( 1 )
 TYPE = "EXP_Story_editor"
 names = {
+"into_speak_ceo": 5,
 "intro_meet_ceo": 4,
 "intro_science": 1,
 "intro_science_followup": 3,
@@ -626,6 +627,47 @@ not be too far out of reach.",
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
 "text": "Keep me up to date on your progress.",
+"type": "line"
+}
+}
+},
+5: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Non-event CEO interactions",
+"name": "into_speak_ceo",
+"nodes": {
+1: {
+"graph_offset": Vector2( 0, -360 ),
+"links": {
+0: 2,
+1: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "Any updates?
+<choice>Nothing yet</choice>
+<choice>Where is the shipping facility?</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 560, -420 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Ravenworks is counting on you.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 560, -220 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "It is on the mid level.",
 "type": "line"
 }
 }

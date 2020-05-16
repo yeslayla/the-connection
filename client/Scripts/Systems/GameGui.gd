@@ -21,6 +21,7 @@ func clear_choices():
 		$Dialog/Choices.get_child(i).queue_free()
 	
 func add_choice(speaker : Node, choice_id : int, choice_text : String):
+	$Dialog/Choices.hide()
 	var button = Button.new()
 	button.text = choice_text
 	button.connect("button_down", speaker, "_on_choice", [choice_id])

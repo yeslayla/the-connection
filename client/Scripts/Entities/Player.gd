@@ -24,7 +24,7 @@ func remove_interactable(interactable):
 		interactables.remove(loc)
 
 func _process(delta):
-	if Input.is_action_just_pressed("ui_accept") and len(interactables) > 0:
+	if Input.is_action_just_pressed("ui_accept") and len(interactables) > 0 and not gui.is_in_dialog():
 		interactables[0].interact()
 
 func _physics_process(delta):

@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Art/Characters/business.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 5, 8 )
+extents = Vector2( 16.0863, 8 )
 
 [node name="Scientist" type="Area2D"]
 script = ExtResource( 1 )
