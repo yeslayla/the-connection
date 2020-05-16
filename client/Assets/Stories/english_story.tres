@@ -10,7 +10,8 @@ names = {
 "intro_meet_ceo": 4,
 "intro_science": 1,
 "intro_science_followup": 3,
-"intro_text": 2
+"intro_text": 2,
+"intro_transportship": 6
 }
 story = {
 1: {
@@ -668,6 +669,25 @@ not be too far out of reach.",
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
 "text": "It is on the mid level.",
+"type": "line"
+}
+}
+},
+6: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Interact with landed transportship",
+"name": "intro_transportship",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "This seems to be a Ravenetworks transport, but it's empty. Is this
+suppose to be carrying the biological shipment?",
 "type": "line"
 }
 }

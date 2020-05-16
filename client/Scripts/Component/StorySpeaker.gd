@@ -13,7 +13,7 @@ var did : int
 var choices : int = 1
 var selected_choice : int = -1
 export var speaker_name = ""
-
+var final_display_message = ""
 
 func _ready():
 	story_reader.read(story_file)
@@ -30,16 +30,22 @@ func _on_text_update():
 func start_dialog(record : String):
 	start_dialog_did(story_reader.get_did_via_record_name(record))
 
+func intialize_dialog():
+	if not gui:
+		gui = get_node("/root/World/GUI")
+
+
 func start_dialog_did(dialog_id : int):
-	gui = get_node("/root/World/GUI")
+	intialize_dialog()
 	if not gui.is_in_dialog():
 		nid = 1
 		did = dialog_id
-		
 		process_message(story_reader.get_text(did, nid))
 	
 func has_next_node():
 	return story_reader.has_slot(did, nid, 0)
+
+
 	
 func process_message(message):
 	gui.clear_choices()
@@ -62,6 +68,7 @@ func process_message(message):
 			i = i + 1
 
 	speak(message)
+	final_display_message = message
 	
 func _on_choice(decision):
 	move_dialog_forward(decision)
@@ -75,5 +82,6 @@ func move_dialog_forward(decision = 0):
 		gui.finish_dialog()
 	
 func _process(delta):
-	if(Input.is_action_just_pressed("ui_accept") and choices == 0 and playing_speech == false):
+	if(Input.is_action_just_pressed("ui_accept") and choices == 0 and final_display_message == gui.current_dialog()):
+		print("YEET")
 		move_dialog_forward(0)

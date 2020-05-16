@@ -5,6 +5,7 @@ var looping : bool = false
 
 func _ready():
 	main_player = self
+	bus = "Music"
 
 func play_music(song, loop=true):
 	var audio_file = "res://Assets/Music/" + song + ".ogg"

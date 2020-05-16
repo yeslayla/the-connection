@@ -5,6 +5,7 @@ signal finished_text
 signal message_list_empty
 
 func speak(message):
+	done = false
 	spoken_text = ""
 	for character in message:
 		soundQueue.append(character)
@@ -24,6 +25,7 @@ var speaker = "default"
 var soundQueue = []
 var spoken_text = ""
 var playing_speech = false
+var done = true
 export var voice_pitch : float = 1
 
 func play_audio():
@@ -61,7 +63,9 @@ func play_audio():
 			print("No sound for: " + str(speaker))
 	else:
 		playing_speech = false
-		emit_signal("finished_text")
+		if len(soundQueue) == 0:
+			emit_signal("finished_text")
+			done = true
 			
 func del_obj(obj):
 	obj.queue_free()

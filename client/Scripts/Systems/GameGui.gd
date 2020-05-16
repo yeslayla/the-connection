@@ -1,9 +1,12 @@
 extends CanvasLayer
 
 func is_in_dialog():
-	return in_dialog
+	return in_dialog or $Dialog.is_visible_in_tree()
 
 var in_dialog = false
+
+func current_dialog():
+	return $Dialog/Textbox/Body.text
 
 func set_dialog(message, speaker=""):
 	$Dialog.show()
