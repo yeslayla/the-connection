@@ -15,8 +15,9 @@ _global_script_class_icons={
 
 [application]
 
-config/name="the-connection"
+config/name="The Connection"
 run/main_scene="res://Scenes/Title.scn"
+boot_splash/image="res://wallpaper.png"
 config/icon="res://icon.png"
 
 [autoload]
@@ -67,4 +68,5 @@ ui_down={
 
 [rendering]
 
+threads/thread_model=2
 environment/default_environment="res://default_env.tres"
