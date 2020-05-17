@@ -14,10 +14,10 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2.1.0
-        with:
-          submodules: 'true'
-          lfs: 'true'
-          token: ${{ secrets.GH_SECRET }}
+        #with:
+          #submodules: 'true'
+          #lfs: 'true'
+          #token: ${{ secrets.GH_SECRET }}
       - name: Configure
         env:
           PLATFORM: ${{ matrix.platform }}
