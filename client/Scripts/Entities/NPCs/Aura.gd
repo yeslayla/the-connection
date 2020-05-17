@@ -7,6 +7,7 @@ func _ready():
 	$Speaker.speaker_name = "Aura"
 	connect("body_entered", self, "_on_body_enter")
 	connect("body_exited", self, "_on_body_exit")
+	#$Speaker.connect("dialog_exited", self, "_next")
 
 func _on_body_enter(body):
 	if body.has_method("add_interactable"):

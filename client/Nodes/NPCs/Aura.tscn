@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Sfx/intro/processed.wav" type="AudioStream" id=1]
+[ext_resource path="res://Scripts/Component/StorySpeaker.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Entities/NPCs/Aura.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Art/Characters/aura.png" type="Texture" id=4]
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 32, 16 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 62.9439, 20.084 )
+
+[node name="Aura" type="Area2D"]
+position = Vector2( 830.805, 1176.02 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = SubResource( 14 )
+hframes = 2
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 15 )
+
+[node name="Speaker" type="Node" parent="."]
+script = ExtResource( 2 )
+speaker_name = "Aura"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 19
+
+[node name="Blood" type="ColorRect" parent="CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.54902, 0.105882, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

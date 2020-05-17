@@ -926,13 +926,235 @@ Ravenwork staff!",
 "name": "aura_meeting",
 "nodes": {
 1: {
-"graph_offset": Vector2( 40, 40 ),
+"graph_offset": Vector2( 20, 40 ),
+"links": {
+0: 5,
+1: 2,
+2: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "Hello Veronica.
+<choice>...</choice>
+<choice>Who are you?</choice>
+<choice>Stop!</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 520, 60 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I am you.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 1000, 80 ),
+"links": {
+0: 6,
+1: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "Well, I am Veronica Gilmore. Designation: Aura.
+<choice>Explain</choice>
+<choice>You are lying!</choice>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 460, 300 ),
+"links": {
+0: 8,
+1: 11,
+2: 12
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "As you can see now, you are not the first person cloned for Ravenworks profit
+margins.
+<choice>Are you the traitor?</choice>
+<choice>Return the shipment!</choice>
+<choice>We can talk</choice>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 520, -120 ),
 "links": {
 
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Hello Veronica.",
+"text": "Oh... They truely had you didn't they.",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 1480, -100 ),
+"links": {
+0: 17,
+1: 19
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "You were not created to stop Duke Enterprises. You were created to
+surpress democratic sympathizers.
+<choice>Democratic Symathizers?</choice>
+<choice>What about the leaks?</choice>",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 1480, 100 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Then you will die in ignorance.",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( 1000, 280 ),
+"links": {
+0: 9
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "No, Grant is very much aware of my loyalties.",
+"type": "line"
+},
+9: {
+"graph_offset": Vector2( 1480, 280 ),
+"links": {
+0: 10
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I am Commander Veronic Gilmore of the Resitance Forces.",
+"type": "line"
+},
+10: {
+"graph_offset": Vector2( 1960, 280 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Grant is a cruel man...",
+"type": "line"
+},
+11: {
+"graph_offset": Vector2( 1000, 460 ),
+"links": {
+0: 15
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "This shipment is being delivered to Resistance medical facilities. It's going to save
+lives, not be used for creating slaves.",
+"type": "line"
+},
+12: {
+"graph_offset": Vector2( 1000, 640 ),
+"links": {
+0: 13
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "There isn't much we can do sadly. I'm presuming you still have
+your implant.",
+"type": "line"
+},
+13: {
+"graph_offset": Vector2( 1480, 640 ),
+"links": {
+0: 14
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Do you want to discuss terms of peace with us?
+<choice>No</choice>",
+"type": "line"
+},
+14: {
+"graph_offset": Vector2( 1960, 640 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "You weren't even given the choice. They programmed you to respond that way.",
+"type": "line"
+},
+15: {
+"graph_offset": Vector2( 1480, 460 ),
+"links": {
+0: 16
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Ravenworks and Duke Enterprises were the ones in the old capitial the day you died.",
+"type": "line"
+},
+16: {
+"graph_offset": Vector2( 1960, 460 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "They're the ones who took advantage of all the death...",
+"type": "line"
+},
+17: {
+"graph_offset": Vector2( 1980, -100 ),
+"links": {
+0: 18
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "The Corporate Collective does not care about human lives. They aren't looking
+out for anyone but their executives.",
+"type": "line"
+},
+18: {
+"graph_offset": Vector2( 2460, -100 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "That leaves those who were automated away to die.",
+"type": "line"
+},
+19: {
+"graph_offset": Vector2( 1980, 60 ),
+"links": {
+0: 20
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "All the leaks came from the resistance.",
+"type": "line"
+},
+20: {
+"graph_offset": Vector2( 2460, 60 ),
+"links": {
+0: 21
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Grant has the foolish idea that he can convince me to work for Ravenworks again.",
+"type": "line"
+},
+21: {
+"graph_offset": Vector2( 2940, 60 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "But after what I learned about the old capital... Never again.",
 "type": "line"
 }
 }
