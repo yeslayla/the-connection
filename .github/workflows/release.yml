@@ -34,7 +34,9 @@ jobs:
         run: |
           TAG=$(jq --raw-output '.release.tag_name' $GITHUB_EVENT_PATH)
           echo ::set-output name=TAG::$TAG
-          echo $TAG > client/VERSION.txt
+
+          cd $GITHUB_WORKSPACE/client
+          echo $TAG > VERSION.txt
       - name: Build
         id: build
         uses: josephbmanley/build-godot-action@v1.4.0
