@@ -1,9 +1,22 @@
 extends CanvasLayer
 
+var in_dialog = false
+var tip_timer : Timer
+var zone_timer : Timer
+
+const TIP_FADE_RATE = 0.1
+const SHOW_TIP_TIME = 3
+
+const ZONE_FADE_RATE = 0.05
+const SHOW_ZONE_TIME = 3
+
+func _ready():
+	$Dialog.hide()
+	$Tip.hide()
+	$ZoneLabel.hide()
+
 func is_in_dialog():
 	return in_dialog or $Dialog.is_visible_in_tree()
-
-var in_dialog = false
 
 func current_dialog():
 	return $Dialog/Textbox/Body.text
@@ -32,3 +45,65 @@ func add_choice(speaker : Node, choice_id : int, choice_text : String):
 
 func show_choices():
 	$Dialog/Choices.show()
+
+func display_tip(tip):
+	$Tip.modulate.a = 0
+	$Tip.text = tip
+	$Tip.show()
+	if not tip_timer:
+		tip_timer = Timer.new()
+		add_child(tip_timer)
+	tip_timer.disconnect("timeout", self, "fade_tip_out")
+	tip_timer.disconnect("timeout", self, "start_fade_tip_out")
+	tip_timer.connect("timeout", self, "fade_tip_in")
+	tip_timer.start(TIP_FADE_RATE)
+		
+func start_fade_tip_out():
+	tip_timer.disconnect("timeout", self, "fade_tip_in")
+	tip_timer.disconnect("timeout", self, "start_fade_tip_out")
+	tip_timer.connect("timeout", self, "fade_tip_out")
+	tip_timer.start(TIP_FADE_RATE)
+	
+func fade_tip_in():
+	$Tip.modulate.a = clamp($Tip.modulate.a + 0.1, 0, 1)
+	if $Tip.modulate.a == 1:
+		tip_timer.disconnect("timeout", self, "fade_tip_out")
+		tip_timer.disconnect("timeout", self, "fade_tip_in")
+		tip_timer.connect("timeout", self, "start_fade_tip_out")
+		tip_timer.start(SHOW_TIP_TIME)
+		
+func fade_tip_out():
+	$Tip.modulate.a = clamp($Tip.modulate.a - 0.1, 0, 1)
+	if $Tip.modulate.a == 0:
+		tip_timer.stop()
+
+func display_zone(zone):
+	$ZoneLabel.modulate.a = 0
+	$ZoneLabel.text = "Entering: " + zone
+	$ZoneLabel.show()
+	if not zone_timer:
+		zone_timer = Timer.new()
+		add_child(zone_timer)
+	zone_timer.disconnect("timeout", self, "fade_zone_out")
+	zone_timer.disconnect("timeout", self, "start_fade_zone_out")
+	zone_timer.connect("timeout", self, "fade_zone_in")
+	zone_timer.start(ZONE_FADE_RATE)
+		
+func start_fade_zone_out():
+	zone_timer.disconnect("timeout", self, "fade_zone_in")
+	zone_timer.disconnect("timeout", self, "start_fade_zone_out")
+	zone_timer.connect("timeout", self, "fade_zone_out")
+	zone_timer.start(ZONE_FADE_RATE)
+	
+func fade_zone_in():
+	$ZoneLabel.modulate.a = clamp($ZoneLabel.modulate.a + 0.1, 0, 1)
+	if $ZoneLabel.modulate.a == 1:
+		zone_timer.disconnect("timeout", self, "fade_zone_out")
+		zone_timer.disconnect("timeout", self, "fade_zone_in")
+		zone_timer.connect("timeout", self, "start_fade_zone_out")
+		zone_timer.start(SHOW_ZONE_TIME)
+		
+func fade_zone_out():
+	$ZoneLabel.modulate.a = clamp($ZoneLabel.modulate.a - 0.1, 0, 1)
+	if $ZoneLabel.modulate.a == 0:
+		zone_timer.stop()

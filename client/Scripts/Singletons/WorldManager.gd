@@ -14,4 +14,4 @@ func _ready():
 
 func play_sound(audio_stream):
 	audio_player.stream = audio_stream
-	audio_player.play()
+	#audio_player.play()

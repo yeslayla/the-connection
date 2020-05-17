@@ -19,3 +19,4 @@ func _on_interact():
 func _on_dialog_exit():
 	if state == 0:
 		state = 1
+		$Speaker.gui.display_tip("Press S and then SPACE\nto go down platforms")

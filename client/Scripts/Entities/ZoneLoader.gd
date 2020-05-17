@@ -12,6 +12,9 @@ func _on_body_entered(body):
 			var child = parent.get_child(i)
 			if child.has_method("load_zone"):
 				if child.name == load_zone + "Zone":
-					child.load_zone()
+					if not child.is_loaded():
+						child.load_zone()
+						var gui = get_tree().root.get_node("World").get_node("GUI")
+						gui.display_zone(child.display_name)
 				else:
 					child.unload_zone()

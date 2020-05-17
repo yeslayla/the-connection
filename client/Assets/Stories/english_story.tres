@@ -6,6 +6,8 @@
 script = ExtResource( 1 )
 TYPE = "EXP_Story_editor"
 names = {
+"aura_meeting": 12,
+"aura_meeting_gun": 13,
 "into_speak_ceo": 5,
 "intro_major_worker": 11,
 "intro_meet_ceo": 4,
@@ -913,6 +915,42 @@ Ravenwork staff!",
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
 "text": "Oh, well it was unloaded by Ravenwork staff at the lower level.",
+"type": "line"
+}
+}
+},
+12: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Meeting your clone for the first time",
+"name": "aura_meeting",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Hello Veronica.",
+"type": "line"
+}
+}
+},
+13: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Getting shot by your clone",
+"name": "aura_meeting_gun",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I'm sorry Veronica.",
 "type": "line"
 }
 }

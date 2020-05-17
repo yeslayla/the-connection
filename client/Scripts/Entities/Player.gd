@@ -17,6 +17,20 @@ var motion : Vector2 = Vector2(0,0) # Player's current velocity
 var gui
 
 var interactables = []
+var items = []
+var equiped = null
+
+func add_item(item):
+	items.append(item)
+	equip_item(item)
+
+func equip_item(item):
+	var node = get_node_or_null("Torso/RightArm/RightForearm/LeftHand/Node2D/" + item)
+	if node:
+		equiped = item
+		node.show()
+	else:
+		print("Tried to equip: " + item + " but item was missing!")
 
 func add_interactable(interactable):
 	interactables.append(interactable)
@@ -49,7 +63,7 @@ func _physics_process(delta):
 	
 
 func user_input():
-	if Input.is_action_just_pressed("ui_accept") and len(interactables) > 0 and not gui.is_in_dialog():
+	if Input.is_action_just_pressed("interact") and len(interactables) > 0 and not gui.is_in_dialog():
 		interactables[0].interact()
 	
 	if is_on_floor() and Input.is_action_just_pressed("ui_up") and Input.is_action_pressed("ui_down"):
