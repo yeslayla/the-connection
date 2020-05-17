@@ -16,7 +16,9 @@ jobs:
         uses: actions/checkout@v2.1.0
         with:
           submodules: 'true'
+          lfs: 'true'
           token: ${{ secrets.GH_SECRET }}
+          fetch-depth: 0
       - name: Configure
         env:
           PLATFORM: ${{ matrix.platform }}
@@ -34,7 +36,9 @@ jobs:
         run: |
           TAG=$(jq --raw-output '.release.tag_name' $GITHUB_EVENT_PATH)
           echo ::set-output name=TAG::$TAG
-          echo $TAG > client/VERSION.txt
+
+          cd $GITHUB_WORKSPACE/client
+          echo $TAG > VERSION.txt
       - name: Build
         id: build
         uses: josephbmanley/build-godot-action@v1.4.0
@@ -42,6 +46,7 @@ jobs:
           name: ${{ env.EXPORT_NAME }}
           preset: ${{ matrix.platform }}
           projectDir: client
+          debugMode: 'true'
       - name: Push to Itch
         uses: josephbmanley/butler-publish-itchio-action@v1.0.1
         env:

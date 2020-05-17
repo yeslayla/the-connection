@@ -1,8 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://addons/EXP-System-Dialog/Dialog Editor/Nodes/Line/line_node.gd" type="Script" id=1]
-[ext_resource path="res://addons/EXP-System-Dialog/Dialog Editor/Nodes/Line/icon_distraction_free.svg" type="Texture" id=2]
-
 
 [node name="Line" type="GraphNode"]
 margin_right = 324.0
@@ -51,15 +49,6 @@ rect_min_size = Vector2( 256, 64 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 smooth_scrolling = true
-
-[node name="Editor_BTN" type="Button" parent="VBoxContainer/HBoxContainer2"]
-margin_left = 332.0
-margin_right = 364.0
-margin_bottom = 64.0
-rect_min_size = Vector2( 32, 0 )
-hint_tooltip = "Expand this node's text editor."
-icon = ExtResource( 2 )
-expand_icon = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 68.0
