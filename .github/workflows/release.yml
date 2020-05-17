@@ -26,13 +26,6 @@ jobs:
           else
             echo "::set-env name=EXPORT_NAME::the-connection" 
           fi
-      - name: Build
-        id: build
-        uses: josephbmanley/build-godot-action@v1.4.0
-        with:
-          name: ${{ env.EXPORT_NAME }}
-          preset: ${{ matrix.platform }}
-          projectDir: client
       - id: get_tag
         name: Get Tag
         env:
@@ -41,6 +34,14 @@ jobs:
         run: |
           TAG=$(jq --raw-output '.release.tag_name' $GITHUB_EVENT_PATH)
           echo ::set-output name=TAG::$TAG
+          echo $TAG > client/VERSION.txt
+      - name: Build
+        id: build
+        uses: josephbmanley/build-godot-action@v1.4.0
+        with:
+          name: ${{ env.EXPORT_NAME }}
+          preset: ${{ matrix.platform }}
+          projectDir: client
       - name: Push to Itch
         uses: josephbmanley/butler-publish-itchio-action@v1.0.1
         env:
