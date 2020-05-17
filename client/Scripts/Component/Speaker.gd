@@ -47,14 +47,13 @@ func play_audio():
 		
 		spoken_text = spoken_text + letter
 		emit_signal("updated_text")
-		
 		if letter in " ,-'\"\n":
 			speaking_timer.start(0.05)
 			return
 		elif letter in ".!":
 			speaking_timer.start(0.15)
 			return
-		elif File.new().file_exists(audio_file):
+		elif load(audio_file):
 			track = load(audio_file)
 			audio_player.stream = track
 			audio_player.play()

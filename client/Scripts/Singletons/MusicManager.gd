@@ -9,7 +9,7 @@ func _ready():
 
 func play_music(song, loop=true):
 	var audio_file = "res://Assets/Music/" + song + ".ogg"
-	if File.new().file_exists(audio_file):
+	if load(audio_file):
 		var track = load(audio_file)
 		looping = loop
 		main_player.stream = track
