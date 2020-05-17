@@ -1,0 +1,198 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Art/UI/Credits/godot.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Proprietary/hf-scifi-complete/improbable-v1/Improbable.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Art/logo.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Art/head_bg_less.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+font_data = ExtResource( 2 )
+
+[node name="Scolling" type="VBoxContainer"]
+margin_left = 407.0
+margin_top = 720.0
+margin_right = 873.0
+margin_bottom = 1621.0
+size_flags_horizontal = 3
+custom_constants/separation = 64
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Logo" type="HBoxContainer" parent="."]
+margin_right = 562.0
+margin_bottom = 68.0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Logo"]
+margin_left = 121.0
+margin_right = 441.0
+margin_bottom = 68.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_top = 132.0
+margin_right = 562.0
+margin_bottom = 216.0
+text = "Writing, Design, and Programming
+by Joseph Manley
+@josephbmanley"
+align = 1
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_top = 280.0
+margin_right = 562.0
+margin_bottom = 284.0
+
+[node name="AssetLabel" type="Label" parent="."]
+margin_top = 348.0
+margin_right = 562.0
+margin_bottom = 396.0
+custom_fonts/font = SubResource( 1 )
+text = "Assets"
+align = 1
+uppercase = true
+
+[node name="Music" type="Label" parent="."]
+margin_top = 460.0
+margin_right = 562.0
+margin_bottom = 515.0
+text = "Music by Tim Beek
+@timbeekmusic"
+align = 1
+
+[node name="Fonts" type="Label" parent="."]
+margin_top = 579.0
+margin_right = 562.0
+margin_bottom = 634.0
+text = "Fonts by 	somepx
+@somepx"
+align = 1
+
+[node name="Shaders" type="Label" parent="."]
+margin_top = 698.0
+margin_right = 562.0
+margin_bottom = 753.0
+text = "Scaling Shaders by 	CptPotato
+www.github.com/CptPotato"
+align = 1
+
+[node name="HSeparator2" type="HSeparator" parent="."]
+margin_top = 817.0
+margin_right = 562.0
+margin_bottom = 821.0
+
+[node name="ToolsLabel" type="Label" parent="."]
+margin_top = 885.0
+margin_right = 562.0
+margin_bottom = 933.0
+custom_fonts/font = SubResource( 1 )
+text = "Tools"
+align = 1
+uppercase = true
+
+[node name="Godot" type="HSplitContainer" parent="."]
+margin_top = 997.0
+margin_right = 562.0
+margin_bottom = 1139.0
+
+[node name="Label" type="Label" parent="Godot"]
+margin_right = 402.0
+margin_bottom = 142.0
+text = "
+Godot
+Game Engine
+www.godotengine.org                
+"
+align = 1
+valign = 1
+
+[node name="TextureRect" type="TextureRect" parent="Godot"]
+margin_left = 414.0
+margin_right = 562.0
+margin_bottom = 142.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="Aseprite" type="Label" parent="."]
+margin_top = 1203.0
+margin_right = 562.0
+margin_bottom = 1287.0
+text = "Aseprite
+Sprite Editor
+www.aseprite.org"
+align = 1
+
+[node name="Tilesetter" type="Label" parent="."]
+margin_top = 1351.0
+margin_right = 562.0
+margin_bottom = 1435.0
+text = "Tilesetter
+Tileset Design Tool
+www.tilesetter.org"
+align = 1
+
+[node name="DialogSystem" type="Label" parent="."]
+margin_top = 1499.0
+margin_right = 562.0
+margin_bottom = 1583.0
+text = "EXP Godot Dialog System
+Dialog Editor Godot Addon
+www.github.com/EXPWorlds/Godot-Dialog-System"
+align = 1
+
+[node name="HSeparator3" type="HSeparator" parent="."]
+margin_top = 1647.0
+margin_right = 562.0
+margin_bottom = 1651.0
+
+[node name="Godot Wild Jam" type="HSplitContainer" parent="."]
+margin_top = 1715.0
+margin_right = 562.0
+margin_bottom = 2031.0
+
+[node name="Label" type="Label" parent="Godot Wild Jam"]
+margin_right = 230.0
+margin_bottom = 316.0
+text = "
+
+
+
+
+Godot Wild Jam #21
+Submission
+
+
+
+"
+align = 1
+valign = 1
+
+[node name="TextureRect" type="TextureRect" parent="Godot Wild Jam"]
+margin_left = 242.0
+margin_right = 562.0
+margin_bottom = 316.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="Thanks" type="Label" parent="."]
+margin_top = 2095.0
+margin_right = 562.0
+margin_bottom = 2121.0
+text = "Thanks for playing!"
+align = 1
+
+[node name="Feedback" type="Label" parent="."]
+margin_top = 2185.0
+margin_right = 562.0
+margin_bottom = 2240.0
+text = "Any and all feedback is appreciated!
+cloudsumu.com/r/confeedback"
+align = 1

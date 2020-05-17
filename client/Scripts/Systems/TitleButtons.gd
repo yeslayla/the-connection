@@ -14,6 +14,7 @@ func _ready():
 	$CreditsButton.connect("button_down", self, "_on_button_press", ["credits"])
 	$OptionsButton.connect("button_down", self, "_on_button_press", ["options"])
 	$BugButton.connect("button_down", self, "_on_button_press", ["bug"])
+	check_completion()
 
 
 func _on_button_press(button):
@@ -29,3 +30,20 @@ func _on_button_press(button):
 			get_parent().get_parent().get_node("OptionsDialog").popup_centered()
 		"bug":
 			OS.shell_open("https://github.com/josephbmanley/the-connection/issues/new?labels=bug&template=1_bug_report.md")
+		"feedback":
+			OS.shell_open("https://cloudsumu.com/r/confeedback")
+
+func check_completion():
+	var file = File.new()
+	if file.file_exists("user://progress.json"):
+		file.open("user://progress.json", File.READ)
+		var data = parse_json(file.get_as_text())
+		file.close()
+		if typeof(data) == TYPE_DICTIONARY:
+			if "completed" in data:
+				if data["completed"] == "true":
+					var feed_back_button = Button.new()
+					feed_back_button.text = "Give Feedback"
+					feed_back_button.connect("button_down", self, "_on_button_press", ["feedback"])
+					add_child(feed_back_button)
+					move_child(feed_back_button, 3)

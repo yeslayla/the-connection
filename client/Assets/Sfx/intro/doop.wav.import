@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/doop.wav-e7e72235859ccaca12113963ce8e590b.sample"
+
+[deps]
+
+source_file="res://Assets/Sfx/intro/doop.wav"
+dest_files=[ "res://.import/doop.wav-e7e72235859ccaca12113963ce8e590b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

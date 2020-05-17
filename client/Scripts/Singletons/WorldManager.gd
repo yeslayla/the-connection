@@ -10,8 +10,8 @@ func _ready():
 	audio_player = AudioStreamPlayer.new()
 	add_child(audio_player)
 	$Fader/ColorRect.show()
-	play_sound(preload("res://Assets/Sfx/intro/processed.wav"))
+	play_sound(preload("res://Assets/Sfx/intro/doop.wav"))
 
 func play_sound(audio_stream):
 	audio_player.stream = audio_stream
-	#audio_player.play()
+	audio_player.play()
