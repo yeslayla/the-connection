@@ -63,8 +63,9 @@ func play_audio():
 	else:
 		playing_speech = false
 		if len(soundQueue) == 0:
-			emit_signal("finished_text")
-			done = true
+			if not done:
+				emit_signal("finished_text")
+				done = true
 			
 func del_obj(obj):
 	obj.queue_free()
