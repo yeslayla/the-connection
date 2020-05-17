@@ -46,6 +46,7 @@ jobs:
           name: ${{ env.EXPORT_NAME }}
           preset: ${{ matrix.platform }}
           projectDir: client
+          debugMode: 'true'
       - name: Push to Itch
         uses: josephbmanley/butler-publish-itchio-action@v1.0.1
         env:
