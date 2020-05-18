@@ -2,25 +2,24 @@
 
 [ext_resource path="res://Scripts/Entities/NPCs/IntroScientist.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Component/StorySpeaker.gd" type="Script" id=2]
-[ext_resource path="res://Scripts/Art/Characters/scientist.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Art/Characters/scientist.png" type="Texture" id=3]
 
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 3 )
+region = Rect2( 4, 0, 8, 16 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 3 )
-region = Rect2( 4, 0, 8, 16 )
+region = Rect2( 2, 0, 2, 16 )
 
 [sub_resource type="StreamTexture" id=3]
 load_path = "res://.import/scientist.png-ed3195bf022f65d4a0546af474992ee0.stex"
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = SubResource( 3 )
-region = Rect2( 2, 0, 2, 16 )
-
-[sub_resource type="AtlasTexture" id=5]
-atlas = SubResource( 3 )
 region = Rect2( 12, 0, 2, 16 )
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 14.1446, 9.58948 )
 
 [sub_resource type="Animation" id=6]
@@ -92,20 +91,20 @@ tracks/5/keys = {
 script = ExtResource( 1 )
 
 [node name="Torso" type="Sprite" parent="."]
-texture = SubResource( 2 )
+texture = SubResource( 1 )
 
 [node name="RightArm" type="Sprite" parent="Torso"]
 position = Vector2( -5, -0.25 )
 rotation = 0.10472
-texture = SubResource( 4 )
+texture = SubResource( 2 )
 
 [node name="LeftArm" type="Sprite" parent="Torso"]
 position = Vector2( 5, -0.25 )
 rotation = -0.10472
-texture = SubResource( 5 )
+texture = SubResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = SubResource( 5 )
 
 [node name="Speaker" type="Node" parent="."]
 script = ExtResource( 2 )
