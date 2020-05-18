@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="The Connection"
-run/main_scene="res://Scenes/Dev.tscn"
+run/main_scene="res://Scenes/Title.scn"
 boot_splash/image="res://wallpaper.png"
 config/icon="res://icon.png"
 
