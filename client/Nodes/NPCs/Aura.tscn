@@ -1,31 +1,173 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/Sfx/intro/processed.wav" type="AudioStream" id=1]
 [ext_resource path="res://Scripts/Component/StorySpeaker.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Entities/NPCs/Aura.gd" type="Script" id=3]
 [ext_resource path="res://Assets/Art/Characters/aura.png" type="Texture" id=4]
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 4 )
-region = Rect2( 0, 0, 32, 16 )
+region = Rect2( 23, 0, 5, 16 )
 
-[sub_resource type="RectangleShape2D" id=15]
+[sub_resource type="StreamTexture" id=3]
+load_path = "res://.import/aura.png-d56c2c3c604fb12791bf7613004ed5a9.stex"
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = SubResource( 3 )
+region = Rect2( 19, 0, 3, 16 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = SubResource( 3 )
+region = Rect2( 29, 0, 3, 16 )
+
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 62.9439, 20.084 )
 
+[sub_resource type="Animation" id=6]
+resource_name = "Idle"
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Torso/RightArm:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -3, -0.25, 0, 0.25, 0, -3, -0.25, 0, 0.25, 0, -3, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Torso/RightArm:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0.5, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Torso/RightArm:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 4, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Torso/LeftArm:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 3, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Torso/LeftArm:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0.5, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Torso/LeftArm:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -4, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Shoot"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Torso/RightArm:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -3, -0.25, 0, 0.25, 0, -3.28281, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Torso/RightArm:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.791864, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Torso/RightArm:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 85.9568, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3 )
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Torso/RightArm:texture:region")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Rect2( 19, 0, 3, 16 ), Rect2( 4, 0, 3, 16 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Torso:texture:region")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Rect2( 23, 0, 5, 16 ), Rect2( 7, 0, 5, 16 ) ]
+}
+
 [node name="Aura" type="Area2D"]
-position = Vector2( 830.805, 1176.02 )
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = SubResource( 14 )
-hframes = 2
-frame = 1
+[node name="Torso" type="Sprite" parent="."]
+texture = SubResource( 1 )
+
+[node name="RightArm" type="Sprite" parent="Torso"]
+position = Vector2( -3, 0 )
+z_index = -1
+texture = SubResource( 4 )
+
+[node name="LeftArm" type="Sprite" parent="Torso"]
+position = Vector2( 3, 0 )
+z_index = -1
+texture = SubResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 15 )
+visible = false
+shape = SubResource( 2 )
 
 [node name="Speaker" type="Node" parent="."]
 script = ExtResource( 2 )
@@ -45,3 +187,7 @@ color = Color( 0.54902, 0.105882, 0.105882, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Idle = SubResource( 6 )
+anims/Shoot = SubResource( 7 )

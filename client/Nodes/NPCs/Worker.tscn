@@ -1,22 +1,22 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Scripts/Entities/NPCs/CEO.gd" type="Script" id=1]
-[ext_resource path="res://Scripts/Component/StorySpeaker.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Art/Characters/business.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Component/StorySpeaker.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Art/Characters/worker.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Component/InteractableDialog.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 16.0863, 8 )
+extents = Vector2( 13.908, 10 )
 
 [sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 2 )
 region = Rect2( 4, 0, 8, 16 )
 
 [sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 2 )
 region = Rect2( 2, 0, 2, 16 )
 
 [sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 2 )
 region = Rect2( 12, 0, 2, 16 )
 
 [sub_resource type="Animation" id=6]
@@ -84,14 +84,18 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 1, 2 )
 }
 
-[node name="CEO" type="Area2D"]
+[node name="Worker" type="Area2D"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Speaker" type="Node" parent="."]
 script = ExtResource( 1 )
+speaker_name = "Worker"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
-
-[node name="Speaker" type="Node" parent="."]
-script = ExtResource( 2 )
 
 [node name="Torso" type="Sprite" parent="."]
 texture = SubResource( 7 )

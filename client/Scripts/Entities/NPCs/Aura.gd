@@ -7,7 +7,8 @@ func _ready():
 	$Speaker.speaker_name = "Aura"
 	connect("body_entered", self, "_on_body_enter")
 	connect("body_exited", self, "_on_body_exit")
-	#$Speaker.connect("dialog_exited", self, "_next")
+	$AnimationPlayer.play("Idle")
+	$AnimationPlayer.seek(rand_range(0.0,2.0))
 
 func _on_body_enter(body):
 	if body.has_method("add_interactable"):
@@ -16,7 +17,7 @@ func _on_body_enter(body):
 		
 func _process(delta):
 	if state == 1 and not $Speaker.gui.is_in_dialog():
-		$Sprite.frame = 0
+		$AnimationPlayer.play("Shoot")
 		$Speaker.start_dialog("aura_meeting_gun")
 		state = 2
 	elif state == 2 and not $Speaker.gui.is_in_dialog():

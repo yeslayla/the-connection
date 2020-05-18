@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Assets/Materials/SmoothScaling.tres" type="Material" id=1]
 [ext_resource path="res://Assets/Art/Characters/player_parts.png" type="Texture" id=2]
@@ -7,6 +7,1719 @@
 [ext_resource path="res://Assets/Art/flashlight_map.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Art/Objects/flashlight.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Entities/Flashlight.gd" type="Script" id=7]
+
+[sub_resource type="Animation" id=17]
+resource_name = "Idle"
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Sprite/Torso/RightArm:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 2, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Sprite/Torso/RightArm:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.25, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Sprite/Torso/RightArm:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Sprite/Torso/LeftArm:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( -2, -0.25, 0, 0.25, 0, -2, -0.25, 0, 0.25, 0, -2, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Sprite/Torso/LeftArm:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.25, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Sprite/Torso/LeftArm:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( -0.5, -0.25, 0, 0.25, 0, -0.68338, -0.25, 0, 0.25, 0, -0.5, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.44437, -0.25, 0, 0.25, 0, 1.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 11.166, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Sprite/Torso/RightArm/RightForearm:position:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 0.5, -0.25, 0, 0.25, 0, 0.683, -0.25, 0, 0.25, 0, 0.5, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("Sprite/Torso/RightArm/RightForearm:position:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.444, -0.25, 0, 0.25, 0, 1.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("Sprite/Torso/RightArm/RightForearm:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -11.2, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("Sprite/Torso/Hips:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("Sprite/Torso/Hips:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 2.75, -0.25, 0, 0.25, 0, 2.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("Sprite/Torso/Hips:rotation_degrees")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/15/type = "bezier"
+tracks/15/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:x")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"points": PoolRealArray( -1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/16/type = "bezier"
+tracks/16/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:y")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/17/type = "bezier"
+tracks/17/path = NodePath("Sprite/Torso/Hips/LeftLeg:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/18/type = "bezier"
+tracks/18/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:x")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/19/type = "bezier"
+tracks/19/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:y")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/20/type = "bezier"
+tracks/20/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:rotation_degrees")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/21/type = "bezier"
+tracks/21/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2/Node2D:position:x")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/22/type = "bezier"
+tracks/22/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2/Node2D:position:y")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"points": PoolRealArray( 0.91716, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/23/type = "bezier"
+tracks/23/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2/Node2D:rotation_degrees")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/24/type = "bezier"
+tracks/24/path = NodePath("Sprite/Torso/Hips/RightLeg:position:x")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/25/type = "bezier"
+tracks/25/path = NodePath("Sprite/Torso/Hips/RightLeg:position:y")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/26/type = "bezier"
+tracks/26/path = NodePath("Sprite/Torso/Hips/RightLeg:rotation_degrees")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/27/type = "bezier"
+tracks/27/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:x")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/28/type = "bezier"
+tracks/28/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:y")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/29/type = "bezier"
+tracks/29/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:rotation_degrees")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/30/type = "bezier"
+tracks/30/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2/Node2D:position:x")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/31/type = "bezier"
+tracks/31/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2/Node2D:position:y")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"points": PoolRealArray( 0.91716, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/32/type = "bezier"
+tracks/32/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2/Node2D:rotation_degrees")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1 )
+}
+tracks/33/type = "bezier"
+tracks/33/path = NodePath("Sprite/Torso/Hips/Cape:position:x")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/34/type = "bezier"
+tracks/34/path = NodePath("Sprite/Torso/Hips/Cape:position:y")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/35/type = "bezier"
+tracks/35/path = NodePath("Sprite/Torso/Hips/Cape:rotation_degrees")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/36/type = "bezier"
+tracks/36/path = NodePath("Sprite/Torso/Hips/Cape/Cape2:position:x")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/37/type = "bezier"
+tracks/37/path = NodePath("Sprite/Torso/Hips/Cape/Cape2:position:y")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"points": PoolRealArray( 0.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/38/type = "bezier"
+tracks/38/path = NodePath("Sprite/Torso/Hips/Cape/Cape2:rotation_degrees")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/39/type = "bezier"
+tracks/39/path = NodePath("Sprite/Torso/Hips/Cape/Cape2/Cape3:position:x")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/40/type = "bezier"
+tracks/40/path = NodePath("Sprite/Torso/Hips/Cape/Cape2/Cape3:position:y")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/keys = {
+"points": PoolRealArray( 0.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/41/type = "bezier"
+tracks/41/path = NodePath("Sprite/Torso/Hips/Cape/Cape2/Cape3:rotation_degrees")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/42/type = "value"
+tracks/42/path = NodePath("Sprite/Torso:offset")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/43/type = "value"
+tracks/43/path = NodePath("Sprite/Torso/Neck/Head:position")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -2.25 ) ]
+}
+tracks/44/type = "value"
+tracks/44/path = NodePath("Sprite/Torso/Neck:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -2.5 ) ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "InAir"
+length = 1.5
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Sprite/Torso/LeftArm:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -2.18338, -0.25, 0, 0.25, 0, -2.18338, -0.25, 0, 0.25, 0, -2.18338, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Sprite/Torso/LeftArm:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( -0.247254, -0.25, 0, 0.25, 0, -0.247254, -0.25, 0, 0.25, 0, -0.247254, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Sprite/Torso/LeftArm:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 56.1452, -0.25, 0, 0.25, 0, 46.5373, -0.25, 0, 0.25, 0, 56.1452, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0.262864, -0.25, 0, 0.25, 0, 0.097669, -0.25, 0, 0.25, 0, 0.262864, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 1.42974, -0.25, 0, 0.25, 0, 1.43754, -0.25, 0, 0.25, 0, 1.42974, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( -17.0703, -0.25, 0, 0.25, 0, -32.0215, -0.25, 0, 0.25, 0, -17.0703, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Sprite/Torso/RightArm:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 2.15282, -0.25, 0, 0.25, 0, 2.15282, -0.25, 0, 0.25, 0, 2.15282, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Sprite/Torso/RightArm:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( -0.247254, -0.25, 0, 0.25, 0, -0.247254, -0.25, 0, 0.25, 0, -0.247254, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Sprite/Torso/RightArm:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( -55.2004, -0.25, 0, 0.25, 0, -47.7954, -0.25, 0, 0.25, 0, -55.2004, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Sprite/Torso/RightArm/RightForearm:position:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( -0.384793, -0.25, 0, 0.25, 0, -0.564742, -0.25, 0, 0.25, 0, -0.384793, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("Sprite/Torso/RightArm/RightForearm:position:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 1.53113, -0.25, 0, 0.25, 0, 1.43287, -0.25, 0, 0.25, 0, 1.53113, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("Sprite/Torso/RightArm/RightForearm:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 23.4278, -0.25, 0, 0.25, 0, 38.1834, -0.25, 0, 0.25, 0, 23.4278, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( -1.23706, -0.25, 0, 0.25, 0, -1.27458, -0.25, 0, 0.25, 0, -1.23706, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 1.78387, -0.25, 0, 0.25, 0, 1.70882, -0.25, 0, 0.25, 0, 1.78387, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("Sprite/Torso/Hips/LeftLeg:rotation_degrees")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( 23.2636, -0.25, 0, 0.25, 0, 23.884, -0.25, 0, 0.25, 0, 23.2636, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/15/type = "bezier"
+tracks/15/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:x")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"points": PoolRealArray( 0.275843, -0.25, 0, 0.25, 0, 0.413087, -0.25, 0, 0.25, 0, 0.275843, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/16/type = "bezier"
+tracks/16/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:y")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"points": PoolRealArray( 1.63141, -0.25, 0, 0.25, 0, 1.57064, -0.25, 0, 0.25, 0, 1.63141, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/17/type = "bezier"
+tracks/17/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"points": PoolRealArray( -20.5881, -0.25, 0, 0.25, 0, -31.4264, -0.25, 0, 0.25, 0, -20.5881, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/18/type = "bezier"
+tracks/18/path = NodePath("Sprite/Torso/Hips/RightLeg:position:x")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"points": PoolRealArray( 1.11257, -0.25, 0, 0.25, 0, 1.22515, -0.25, 0, 0.25, 0, 1.11257, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/19/type = "bezier"
+tracks/19/path = NodePath("Sprite/Torso/Hips/RightLeg:position:y")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"points": PoolRealArray( 1.67495, -0.25, 0, 0.25, 0, 1.5999, -0.25, 0, 0.25, 0, 1.67495, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/20/type = "bezier"
+tracks/20/path = NodePath("Sprite/Torso/Hips/RightLeg:rotation_degrees")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"points": PoolRealArray( -10.7718, -0.25, 0, 0.25, 0, -21.7698, -0.25, 0, 0.25, 0, -10.7718, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/21/type = "bezier"
+tracks/21/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:x")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"points": PoolRealArray( -0.265053, -0.25, 0, 0.25, 0, -0.125773, -0.25, 0, 0.25, 0, -0.265053, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/22/type = "bezier"
+tracks/22/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:y")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"points": PoolRealArray( 1.73777, -0.25, 0, 0.25, 0, 1.59136, -0.25, 0, 0.25, 0, 1.73777, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+tracks/23/type = "bezier"
+tracks/23/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:rotation_degrees")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"points": PoolRealArray( 15.3899, -0.25, 0, 0.25, 0, 7.71721, -0.25, 0, 0.25, 0, 15.3899, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.8, 1.5 )
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "Jump"
+length = 0.7
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Sprite/Torso:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0.0338669, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Sprite/Torso:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0.474117, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Sprite/Torso:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( -1, -0.25, 0, 0.25, 0, -1.12225, -0.25, 0, 0.25, 0, -1.27948, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.68887, -0.25, 0, 0.25, 0, 1.71508, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Sprite/Torso/Hips/LeftLeg:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 14.9822, -0.25, 0, 0.25, 0, 24.2249, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0.464797, -0.25, 0, 0.25, 0, 0.340013, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.34086, -0.25, 0, 0.25, 0, 1.48276, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -36.8221, -0.25, 0, 0.25, 0, -24.1853, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Sprite/Torso/Hips/RightLeg:position:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1.15282, -0.25, 0, 0.25, 0, 1.20522, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("Sprite/Torso/Hips/RightLeg:position:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.47493, -0.25, 0, 0.25, 0, 1.65836, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("Sprite/Torso/Hips/RightLeg:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -20.5234, -0.25, 0, 0.25, 0, -30.2793, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.6 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.443741, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.45335, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:rotation_degrees")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 37.0571, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "RunLeft"
+length = 0.9
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 1.07832, -0.25, 0, 0.25, 0, 0.528183, -0.25, 0, 0.25, 0, -0.877747, -0.25, 0, 0.25, 0, -1.15282, -0.25, 0, 0.25, 0, -1.06113, -0.25, 0, 0.25, 0, -0.847183, -0.25, 0, 0.25, 0, -0.388733, -0.25, 0, 0.25, 0, 0.436493, -0.25, 0, 0.25, 0, 0.86438, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1.59718, -0.25, 0, 0.25, 0, 1.65831, -0.25, 0, 0.25, 0, 1.4138, -0.25, 0, 0.25, 0, 1.75, -0.25, 0, 0.25, 0, 1.78056, -0.25, 0, 0.25, 0, 1.75, -0.25, 0, 0.25, 0, 1.71944, -0.25, 0, 0.25, 0, 1.68887, -0.25, 0, 0.25, 0, 1.71944, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Sprite/Torso/Hips/LeftLeg:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( -36.5111, -0.25, 0, 0.25, 0, -12.2064, -0.25, 0, 0.25, 0, 41.5685, -0.25, 0, 0.25, 0, 41.5685, -0.25, 0, 0.25, 0, 38.0287, -0.25, 0, 0.25, 0, 27.6439, -0.25, 0, 0.25, 0, 15.1961, -0.25, 0, 0.25, 0, -0.812915, -0.25, 0, 0.25, 0, -21.9051, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0.476654, -0.25, 0, 0.25, 0, 0.605057, -0.25, 0, 0.25, 0, 0.65596, -0.25, 0, 0.25, 0, 0.328079, -0.25, 0, 0.25, 0, 0.448471, -0.25, 0, 0.25, 0, 0.808167, -0.25, 0, 0.25, 0, 0.969482, -0.25, 0, 0.25, 0, 0.969482, -0.25, 0, 0.25, 0, 0.713074, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 1.72253, -0.25, 0, 0.25, 0, 1.56268, -0.25, 0, 0.25, 0, 1.43582, -0.25, 0, 0.25, 0, 1.84917, -0.25, 0, 0.25, 0, 1.75505, -0.25, 0, 0.25, 0, 1.25613, -0.25, 0, 0.25, 0, 0.800583, -0.25, 0, 0.25, 0, 0.800583, -0.25, 0, 0.25, 0, 1.35634, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( -39.322, -0.25, 0, 0.25, 0, -39.322, -0.25, 0, 0.25, 0, -52.2255, -0.25, 0, 0.25, 0, -20.5029, -0.25, 0, 0.25, 0, -37.9949, -0.25, 0, 0.25, 0, -70.2937, -0.25, 0, 0.25, 0, -84.8923, -0.25, 0, 0.25, 0, -105.176, -0.25, 0, 0.25, 0, -69.9995, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Sprite/Torso/Hips/RightLeg:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( -1.35341, -0.25, 0, 0.25, 0, -1.01721, -0.25, 0, 0.25, 0, -0.0697479, -0.25, 0, 0.25, 0, 0.572098, -0.25, 0, 0.25, 0, 0.724899, -0.25, 0, 0.25, 0, 0.724899, -0.25, 0, 0.25, 0, -0.405975, -0.25, 0, 0.25, 0, -0.925552, -0.25, 0, 0.25, 0, -0.803299, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Sprite/Torso/Hips/RightLeg:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 1.47493, -0.25, 0, 0.25, 0, 1.47493, -0.25, 0, 0.25, 0, 1.90283, -0.25, 0, 0.25, 0, 1.78058, -0.25, 0, 0.25, 0, 1.68889, -0.25, 0, 0.25, 0, 1.68889, -0.25, 0, 0.25, 0, 1.65833, -0.25, 0, 0.25, 0, 1.62776, -0.25, 0, 0.25, 0, 1.71944, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Sprite/Torso/Hips/RightLeg:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 43.3471, -0.25, 0, 0.25, 0, 43.3471, -0.25, 0, 0.25, 0, 10.8124, -0.25, 0, 0.25, 0, -15.1987, -0.25, 0, 0.25, 0, -39.0684, -0.25, 0, 0.25, 0, -45.2035, -0.25, 0, 0.25, 0, 19.567, -0.25, 0, 0.25, 0, 37.8934, -0.25, 0, 0.25, 0, 37.8934, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 0.506195, -0.25, 0, 0.25, 0, 1.0878, -0.25, 0, 0.25, 0, 1.12491, -0.25, 0, 0.25, 0, 1.03677, -0.25, 0, 0.25, 0, 0.478149, -0.25, 0, 0.25, 0, 0.152969, -0.25, 0, 0.25, 0, 0.949799, -0.25, 0, 0.25, 0, 0.716675, -0.25, 0, 0.25, 0, 0.344177, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 1.44029, -0.25, 0, 0.25, 0, 0.765198, -0.25, 0, 0.25, 0, 0.633652, -0.25, 0, 0.25, 0, 0.958115, -0.25, 0, 0.25, 0, 1.64626, -0.25, 0, 0.25, 0, 1.92607, -0.25, 0, 0.25, 0, 1.1563, -0.25, 0, 0.25, 0, 1.45392, -0.25, 0, 0.25, 0, 1.82128, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( -43.0657, -0.25, 0, 0.25, 0, -86.9422, -0.25, 0, 0.25, 0, -86.9422, -0.25, 0, 0.25, 0, -89.5198, -0.25, 0, 0.25, 0, -37.435, -0.25, 0, 0.25, 0, -5.33336, -0.25, 0, 0.25, 0, -64.9182, -0.25, 0, 0.25, 0, -48.1674, -0.25, 0, 0.25, 0, -19.3847, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("Sprite/Torso/Hips/Cape/Cape2:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("Sprite/Torso/Hips/Cape/Cape2:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("Sprite/Torso/Hips/Cape/Cape2:rotation_degrees")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( -6.65944e-05, -0.25, 0, 0.25, 0, -7.1717e-05, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/15/type = "bezier"
+tracks/15/path = NodePath("Sprite/Torso/Hips/Cape:position:x")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/16/type = "bezier"
+tracks/16/path = NodePath("Sprite/Torso/Hips/Cape:position:y")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/17/type = "bezier"
+tracks/17/path = NodePath("Sprite/Torso/Hips/Cape:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"points": PoolRealArray( -43.9621, -0.25, 0, 0.25, 0, -62.1642, -0.25, 0, 0.25, 0, -43.9621, -0.25, 0, 0.25, 0, -62.1642, -0.25, 0, 0.25, 0, -43.9621, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.5, 0.7, 0.9 )
+}
+tracks/18/type = "bezier"
+tracks/18/path = NodePath("Sprite/Torso/Hips/Cape/Cape2/Cape3:position:x")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/19/type = "bezier"
+tracks/19/path = NodePath("Sprite/Torso/Hips/Cape/Cape2/Cape3:position:y")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"points": PoolRealArray( 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/20/type = "bezier"
+tracks/20/path = NodePath("Sprite/Torso/Hips/Cape/Cape2/Cape3:rotation_degrees")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 16.7043, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 16.7043, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.5, 0.7, 0.9 )
+}
+tracks/21/type = "bezier"
+tracks/21/path = NodePath("Sprite/Torso/RightArm:position:x")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"points": PoolRealArray( 2, -0.25, 0, 0.25, 0, 1.86454, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/22/type = "bezier"
+tracks/22/path = NodePath("Sprite/Torso/RightArm:position:y")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.541848, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/23/type = "bezier"
+tracks/23/path = NodePath("Sprite/Torso/RightArm:rotation_degrees")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"points": PoolRealArray( -59.791, -0.25, 0, 0.25, 0, -0.757511, -0.25, 0, 0.25, 0, -59.791, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/24/type = "bezier"
+tracks/24/path = NodePath("Sprite/Torso/RightArm/RightForearm:position:x")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"points": PoolRealArray( -0.705068, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/25/type = "bezier"
+tracks/25/path = NodePath("Sprite/Torso/RightArm/RightForearm:position:y")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"points": PoolRealArray( 1.04469, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/26/type = "bezier"
+tracks/26/path = NodePath("Sprite/Torso/RightArm/RightForearm:rotation_degrees")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"points": PoolRealArray( 93.0156, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Sprite/Torso/RightArm/RightForearm:z_index")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
+}
+tracks/28/type = "bezier"
+tracks/28/path = NodePath("Sprite/Torso/LeftArm:position:x")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"points": PoolRealArray( -1.68624, -0.25, 0, 0.25, 0, -1.45031, -0.25, 0, 0.25, 0, -1.68624, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/29/type = "bezier"
+tracks/29/path = NodePath("Sprite/Torso/LeftArm:position:y")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"points": PoolRealArray( -0.248942, -0.25, 0, 0.25, 0, -0.349645, -0.25, 0, 0.25, 0, -0.248942, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/30/type = "bezier"
+tracks/30/path = NodePath("Sprite/Torso/LeftArm:rotation_degrees")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"points": PoolRealArray( 33.4274, -0.25, 0, 0.25, 0, -24.4488, -0.25, 0, 0.25, 0, 33.4274, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:z_index")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ -3 ]
+}
+tracks/32/type = "bezier"
+tracks/32/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:position:x")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"points": PoolRealArray( -0.355755, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/33/type = "bezier"
+tracks/33/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:position:y")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"points": PoolRealArray( 1.43273, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/34/type = "bezier"
+tracks/34/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:rotation_degrees")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"points": PoolRealArray( 79.3702, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/35/type = "bezier"
+tracks/35/path = NodePath("Sprite/Torso:offset:x")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/36/type = "bezier"
+tracks/36/path = NodePath("Sprite/Torso:offset:y")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.2, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/37/type = "bezier"
+tracks/37/path = NodePath("Sprite/Torso/Hips:position:x")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/38/type = "bezier"
+tracks/38/path = NodePath("Sprite/Torso/Hips:position:y")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"points": PoolRealArray( 2.75, -0.25, 0, 0.25, 0, 2.58067, -0.25, 0, 0.25, 0, 2.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/39/type = "bezier"
+tracks/39/path = NodePath("Sprite/Torso/Hips:rotation_degrees")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/40/type = "bezier"
+tracks/40/path = NodePath("Sprite/Torso/Neck:position:x")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/41/type = "bezier"
+tracks/41/path = NodePath("Sprite/Torso/Neck:position:y")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/keys = {
+"points": PoolRealArray( -2.5, -0.25, 0, 0.25, 0, -2.7, -0.25, 0, 0.25, 0, -2.5, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/42/type = "bezier"
+tracks/42/path = NodePath("Sprite/Torso/Neck:rotation_degrees")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+
+[sub_resource type="Animation" id=19]
+length = 0.9
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 1.04134, -0.25, 0, 0.25, 0, 0.518555, -0.25, 0, 0.25, 0, 0.319397, -0.25, 0, 0.25, 0, -0.626587, -0.25, 0, 0.25, 0, -0.900421, -0.25, 0, 0.25, 0, -0.651474, -0.25, 0, 0.25, 0, -0.203384, -0.25, 0, 0.25, 0, 0.618134, -0.25, 0, 0.25, 0, 1.36496, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Sprite/Torso/Hips/LeftLeg:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1.67531, -0.25, 0, 0.25, 0, 1.77489, -0.25, 0, 0.25, 0, 1.77489, -0.25, 0, 0.25, 0, 1.62552, -0.25, 0, 0.25, 0, 1.77487, -0.25, 0, 0.25, 0, 1.77487, -0.25, 0, 0.25, 0, 1.79977, -0.25, 0, 0.25, 0, 1.60065, -0.25, 0, 0.25, 0, 1.45128, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Sprite/Torso/Hips/LeftLeg:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( -18.5702, -0.25, 0, 0.25, 0, -38.5768, -0.25, 0, 0.25, 0, -17.9135, -0.25, 0, 0.25, 0, 27.345, -0.25, 0, 0.25, 0, 35.3847, -0.25, 0, 0.25, 0, 10.0679, -0.25, 0, 0.25, 0, -14.8415, -0.25, 0, 0.25, 0, -37.666, -0.25, 0, 0.25, 0, -52.8765, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.610504, -0.25, 0, 0.25, 0, -0.832764, -0.25, 0, 0.25, 0, -0.59491, -0.25, 0, 0.25, 0, -0.59491, -0.25, 0, 0.25, 0, -0.932556, -0.25, 0, 0.25, 0, -0.83197, -0.25, 0, 0.25, 0, -0.854431, -0.25, 0, 0.25, 0, -0.773911, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.677, -0.25, 0, 0.25, 0, 1.47433, -0.25, 0, 0.25, 0, 1.77173, -0.25, 0, 0.25, 0, 1.77173, -0.25, 0, 0.25, 0, 1.57886, -0.25, 0, 0.25, 0, 1.29642, -0.25, 0, 0.25, 0, 1.1218, -0.25, 0, 0.25, 0, 1.31067, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Sprite/Torso/Hips/LeftLeg/LeftLeg2:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 54.6344, -0.25, 0, 0.25, 0, 68.1557, -0.25, 0, 0.25, 0, 34.1175, -0.25, 0, 0.25, 0, 43.7221, -0.25, 0, 0.25, 0, 80.3745, -0.25, 0, 0.25, 0, 91.6715, -0.25, 0, 0.25, 0, 88.8735, -0.25, 0, 0.25, 0, 53.5431, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Sprite/Torso/Hips/RightLeg:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( -1.14091, -0.25, 0, 0.25, 0, -0.618134, -0.25, 0, 0.25, 0, 0.10379, -0.25, 0, 0.25, 0, 0.55191, -0.25, 0, 0.25, 0, 0.850647, -0.25, 0, 0.25, 0, 0.651489, -0.25, 0, 0.25, 0, 0.651489, -0.25, 0, 0.25, 0, -0.643021, -0.25, 0, 0.25, 0, -1.11601, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Sprite/Torso/Hips/RightLeg:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 1.77489, -0.25, 0, 0.25, 0, 1.89935, -0.25, 0, 0.25, 0, 1.84956, -0.25, 0, 0.25, 0, 1.77487, -0.25, 0, 0.25, 0, 1.70018, -0.25, 0, 0.25, 0, 1.94913, -0.25, 0, 0.25, 0, 1.79976, -0.25, 0, 0.25, 0, 1.84955, -0.25, 0, 0.25, 0, 1.65039, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Sprite/Torso/Hips/RightLeg:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 25.5676, -0.25, 0, 0.25, 0, 1.13555, -0.25, 0, 0.25, 0, 335.661, -0.25, 0, 0.25, 0, 320.489, -0.25, 0, 0.25, 0, 313.394, -0.25, 0, 0.25, 0, 313.694, -0.25, 0, 0.25, 0, 315.147, -0.25, 0, 0.25, 0, 379.202, -0.25, 0, 0.25, 0, 393.788, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( -0.771408, -0.25, 0, 0.25, 0, -0.972992, -0.25, 0, 0.25, 0, -0.972992, -0.25, 0, 0.25, 0, -0.908661, -0.25, 0, 0.25, 0, -0.657059, -0.25, 0, 0.25, 0, -0.397499, -0.25, 0, 0.25, 0, -0.76767, -0.25, 0, 0.25, 0, -0.508026, -0.25, 0, 0.25, 0, -0.687546, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:position:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 1.29114, -0.25, 0, 0.25, 0, 1.17062, -0.25, 0, 0.25, 0, 1.17062, -0.25, 0, 0.25, 0, 1.28824, -0.25, 0, 0.25, 0, 1.73553, -0.25, 0, 0.25, 0, 1.93512, -0.25, 0, 0.25, 0, 1.74243, -0.25, 0, 0.25, 0, 1.73108, -0.25, 0, 0.25, 0, 1.73137, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("Sprite/Torso/Hips/RightLeg/RightLeg2:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 78.2623, -0.25, 0, 0.25, 0, 100.236, -0.25, 0, 0.25, 0, 100.236, -0.25, 0, 0.25, 0, 77.8788, -0.25, 0, 0.25, 0, 44.5188, -0.25, 0, 0.25, 0, 22.9561, -0.25, 0, 0.25, 0, 61.848, -0.25, 0, 0.25, 0, 31.9824, -0.25, 0, 0.25, 0, 48.0522, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("Sprite/Torso/LeftArm:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( -1.90477, -0.25, 0, 0.25, 0, -1.90477, -0.25, 0, 0.25, 0, -1.90477, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.9 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("Sprite/Torso/LeftArm:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( -0.301086, -0.25, 0, 0.25, 0, -0.301086, -0.25, 0, 0.25, 0, -0.301086, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.9 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("Sprite/Torso/LeftArm:rotation_degrees")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( 52.623, -0.25, 0, 0.25, 0, 8.15576, -0.25, 0, 0.25, 0, 52.623, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.9 )
+}
+tracks/15/type = "bezier"
+tracks/15/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:position:x")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"points": PoolRealArray( 0.549039, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/16/type = "bezier"
+tracks/16/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:position:y")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"points": PoolRealArray( 1.02748, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/17/type = "bezier"
+tracks/17/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"points": PoolRealArray( -73.1911, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Sprite/Torso/LeftArm/LeftForearm:z_index")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
+}
+tracks/19/type = "bezier"
+tracks/19/path = NodePath("Sprite/Torso/RightArm:position:x")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"points": PoolRealArray( 1.92215, -0.25, 0, 0.25, 0, 1.39937, -0.25, 0, 0.25, 0, 1.92215, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.9 )
+}
+tracks/20/type = "bezier"
+tracks/20/path = NodePath("Sprite/Torso/RightArm:position:y")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"points": PoolRealArray( -0.211825, -0.25, 0, 0.25, 0, -0.0375653, -0.25, 0, 0.25, 0, -0.211825, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.9 )
+}
+tracks/21/type = "bezier"
+tracks/21/path = NodePath("Sprite/Torso/RightArm:rotation_degrees")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"points": PoolRealArray( -20.761, -0.25, 0, 0.25, 0, 17.0193, -0.25, 0, 0.25, 0, -20.761, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4, 0.9 )
+}
+tracks/22/type = "bezier"
+tracks/22/path = NodePath("Sprite/Torso/RightArm/RightForearm:position:x")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"points": PoolRealArray( 0.531615, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/23/type = "bezier"
+tracks/23/path = NodePath("Sprite/Torso/RightArm/RightForearm:position:y")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"points": PoolRealArray( 1.05422, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/24/type = "bezier"
+tracks/24/path = NodePath("Sprite/Torso/RightArm/RightForearm:rotation_degrees")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"points": PoolRealArray( -84.8294, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Sprite/Torso/RightArm/RightForearm:z_index")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ -3 ]
+}
+tracks/26/type = "bezier"
+tracks/26/path = NodePath("Sprite/Torso/Hips/Cape/Cape2:position:x")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9 )
+}
+tracks/27/type = "bezier"
+tracks/27/path = NodePath("Sprite/Torso/Hips/Cape/Cape2:position:y")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"points": PoolRealArray( 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9 )
+}
+tracks/28/type = "bezier"
+tracks/28/path = NodePath("Sprite/Torso/Hips/Cape/Cape2:rotation_degrees")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"points": PoolRealArray( -6.83018e-06, -0.25, 0, 0.25, 0, 3.41509e-06, -0.25, 0, 0.25, 0, -6.83018e-06, -0.25, 0, 0.25, 0, -6.83018e-06, -0.25, 0, 0.25, 0, 3.41509e-06, -0.25, 0, 0.25, 0, -6.83018e-06, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9 )
+}
+tracks/29/type = "bezier"
+tracks/29/path = NodePath("Sprite/Torso/Hips/Cape:position:x")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9 )
+}
+tracks/30/type = "bezier"
+tracks/30/path = NodePath("Sprite/Torso/Hips/Cape:position:y")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9 )
+}
+tracks/31/type = "bezier"
+tracks/31/path = NodePath("Sprite/Torso/Hips/Cape:rotation_degrees")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"points": PoolRealArray( 36.2948, -0.25, 0, 0.25, 0, 22.8133, -0.25, 0, 0.25, 0, 36.2948, -0.25, 0, 0.25, 0, 36.2948, -0.25, 0, 0.25, 0, 22.8133, -0.25, 0, 0.25, 0, 36.2948, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9 )
+}
+tracks/32/type = "bezier"
+tracks/32/path = NodePath("Sprite/Torso/Hips/Cape/Cape2/Cape3:position:x")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9 )
+}
+tracks/33/type = "bezier"
+tracks/33/path = NodePath("Sprite/Torso/Hips/Cape/Cape2/Cape3:position:y")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"points": PoolRealArray( 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0, 0.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9 )
+}
+tracks/34/type = "bezier"
+tracks/34/path = NodePath("Sprite/Torso/Hips/Cape/Cape2/Cape3:rotation_degrees")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -10.5123, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, -10.5123, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 0.9 )
+}
+tracks/35/type = "value"
+tracks/35/path = NodePath("Sprite/Torso:offset")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"times": PoolRealArray( 0, 0.5, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -0.25 ), Vector2( 0, 0 ) ]
+}
+tracks/36/type = "bezier"
+tracks/36/path = NodePath("Sprite/Torso/Neck:position:x")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/37/type = "bezier"
+tracks/37/path = NodePath("Sprite/Torso/Neck:position:y")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"points": PoolRealArray( -2.5, -0.25, 0, 0.25, 0, -2.65, -0.25, 0, 0.25, 0, -2.5, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/38/type = "bezier"
+tracks/38/path = NodePath("Sprite/Torso/Hips:position:x")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+tracks/39/type = "bezier"
+tracks/39/path = NodePath("Sprite/Torso/Hips:position:y")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"points": PoolRealArray( 2.75, -0.25, 0, 0.25, 0, 2.55, -0.25, 0, 0.25, 0, 2.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5, 0.9 )
+}
+
+[sub_resource type="CapsuleShape2D" id=20]
+radius = 1.5
+height = 10.5
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 8
@@ -88,604 +1801,40 @@ flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 3, 19, 1, 2 )
 
-[sub_resource type="Animation" id=17]
-resource_name = "Idle"
-length = 2.0
-loop = true
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Torso/RightArm:position:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PoolRealArray( 2, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("Torso/RightArm:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.25, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/2/type = "bezier"
-tracks/2/path = NodePath("Torso/RightArm:rotation_degrees")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/3/type = "bezier"
-tracks/3/path = NodePath("Torso/LeftArm:position:x")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"points": PoolRealArray( -2, -0.25, 0, 0.25, 0, -2, -0.25, 0, 0.25, 0, -2, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/4/type = "bezier"
-tracks/4/path = NodePath("Torso/LeftArm:position:y")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.25, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/5/type = "bezier"
-tracks/5/path = NodePath("Torso/LeftArm:rotation_degrees")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/6/type = "bezier"
-tracks/6/path = NodePath("Torso/LeftArm/LeftForearm:position:x")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/keys = {
-"points": PoolRealArray( -0.5, -0.25, 0, 0.25, 0, -0.68338, -0.25, 0, 0.25, 0, -0.5, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/7/type = "bezier"
-tracks/7/path = NodePath("Torso/LeftArm/LeftForearm:position:y")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/keys = {
-"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.44437, -0.25, 0, 0.25, 0, 1.75, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/8/type = "bezier"
-tracks/8/path = NodePath("Torso/LeftArm/LeftForearm:rotation_degrees")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 11.166, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/9/type = "bezier"
-tracks/9/path = NodePath("Torso/RightArm/RightForearm:position:x")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/keys = {
-"points": PoolRealArray( 0.5, -0.25, 0, 0.25, 0, 0.683, -0.25, 0, 0.25, 0, 0.5, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/10/type = "bezier"
-tracks/10/path = NodePath("Torso/RightArm/RightForearm:position:y")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/keys = {
-"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.444, -0.25, 0, 0.25, 0, 1.75, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/11/type = "bezier"
-tracks/11/path = NodePath("Torso/RightArm/RightForearm:rotation_degrees")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -11.2, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/12/type = "bezier"
-tracks/12/path = NodePath("Torso/Hips:position:x")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/13/type = "bezier"
-tracks/13/path = NodePath("Torso/Hips:position:y")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/keys = {
-"points": PoolRealArray( 2.75, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/14/type = "bezier"
-tracks/14/path = NodePath("Torso/Hips:rotation_degrees")
-tracks/14/interp = 1
-tracks/14/loop_wrap = true
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/15/type = "bezier"
-tracks/15/path = NodePath("Torso/Hips/LeftLeg:position:x")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/keys = {
-"points": PoolRealArray( -1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/16/type = "bezier"
-tracks/16/path = NodePath("Torso/Hips/LeftLeg:position:y")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/keys = {
-"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/17/type = "bezier"
-tracks/17/path = NodePath("Torso/Hips/LeftLeg:rotation_degrees")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/18/type = "bezier"
-tracks/18/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2:position:x")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/19/type = "bezier"
-tracks/19/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2:position:y")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/keys = {
-"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/20/type = "bezier"
-tracks/20/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2:rotation_degrees")
-tracks/20/interp = 1
-tracks/20/loop_wrap = true
-tracks/20/imported = false
-tracks/20/enabled = true
-tracks/20/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/21/type = "bezier"
-tracks/21/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2/Node2D:position:x")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/22/type = "bezier"
-tracks/22/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2/Node2D:position:y")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/keys = {
-"points": PoolRealArray( 0.91716, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/23/type = "bezier"
-tracks/23/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2/Node2D:rotation_degrees")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/24/type = "bezier"
-tracks/24/path = NodePath("Torso/Hips/RightLeg:position:x")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/25/type = "bezier"
-tracks/25/path = NodePath("Torso/Hips/RightLeg:position:y")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/keys = {
-"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/26/type = "bezier"
-tracks/26/path = NodePath("Torso/Hips/RightLeg:rotation_degrees")
-tracks/26/interp = 1
-tracks/26/loop_wrap = true
-tracks/26/imported = false
-tracks/26/enabled = true
-tracks/26/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/27/type = "bezier"
-tracks/27/path = NodePath("Torso/Hips/RightLeg/RightLeg2:position:x")
-tracks/27/interp = 1
-tracks/27/loop_wrap = true
-tracks/27/imported = false
-tracks/27/enabled = true
-tracks/27/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/28/type = "bezier"
-tracks/28/path = NodePath("Torso/Hips/RightLeg/RightLeg2:position:y")
-tracks/28/interp = 1
-tracks/28/loop_wrap = true
-tracks/28/imported = false
-tracks/28/enabled = true
-tracks/28/keys = {
-"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/29/type = "bezier"
-tracks/29/path = NodePath("Torso/Hips/RightLeg/RightLeg2:rotation_degrees")
-tracks/29/interp = 1
-tracks/29/loop_wrap = true
-tracks/29/imported = false
-tracks/29/enabled = true
-tracks/29/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/30/type = "bezier"
-tracks/30/path = NodePath("Torso/Hips/RightLeg/RightLeg2/Node2D:position:x")
-tracks/30/interp = 1
-tracks/30/loop_wrap = true
-tracks/30/imported = false
-tracks/30/enabled = true
-tracks/30/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/31/type = "bezier"
-tracks/31/path = NodePath("Torso/Hips/RightLeg/RightLeg2/Node2D:position:y")
-tracks/31/interp = 1
-tracks/31/loop_wrap = true
-tracks/31/imported = false
-tracks/31/enabled = true
-tracks/31/keys = {
-"points": PoolRealArray( 0.91716, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-tracks/32/type = "bezier"
-tracks/32/path = NodePath("Torso/Hips/RightLeg/RightLeg2/Node2D:rotation_degrees")
-tracks/32/interp = 1
-tracks/32/loop_wrap = true
-tracks/32/imported = false
-tracks/32/enabled = true
-tracks/32/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1 )
-}
-
-[sub_resource type="Animation" id=18]
-resource_name = "RunLeft"
-length = 0.9
-loop = true
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Torso/Hips/LeftLeg:position:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PoolRealArray( 1.07832, -0.25, 0, 0.25, 0, 0.528183, -0.25, 0, 0.25, 0, -0.877747, -0.25, 0, 0.25, 0, -1.15282, -0.25, 0, 0.25, 0, -1.06113, -0.25, 0, 0.25, 0, -0.847183, -0.25, 0, 0.25, 0, -0.388733, -0.25, 0, 0.25, 0, 0.436493, -0.25, 0, 0.25, 0, 0.86438, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("Torso/Hips/LeftLeg:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"points": PoolRealArray( 1.59718, -0.25, 0, 0.25, 0, 1.65831, -0.25, 0, 0.25, 0, 1.4138, -0.25, 0, 0.25, 0, 1.75, -0.25, 0, 0.25, 0, 1.78056, -0.25, 0, 0.25, 0, 1.75, -0.25, 0, 0.25, 0, 1.71944, -0.25, 0, 0.25, 0, 1.68887, -0.25, 0, 0.25, 0, 1.71944, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/2/type = "bezier"
-tracks/2/path = NodePath("Torso/Hips/LeftLeg:rotation_degrees")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"points": PoolRealArray( -36.5111, -0.25, 0, 0.25, 0, -12.2064, -0.25, 0, 0.25, 0, 41.5685, -0.25, 0, 0.25, 0, 41.5685, -0.25, 0, 0.25, 0, 38.0287, -0.25, 0, 0.25, 0, 27.6439, -0.25, 0, 0.25, 0, 15.1961, -0.25, 0, 0.25, 0, -0.812915, -0.25, 0, 0.25, 0, -21.9051, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/3/type = "bezier"
-tracks/3/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2:position:x")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"points": PoolRealArray( 0.476654, -0.25, 0, 0.25, 0, 0.605057, -0.25, 0, 0.25, 0, 0.65596, -0.25, 0, 0.25, 0, 0.328079, -0.25, 0, 0.25, 0, 0.448471, -0.25, 0, 0.25, 0, 0.808167, -0.25, 0, 0.25, 0, 0.969482, -0.25, 0, 0.25, 0, 0.969482, -0.25, 0, 0.25, 0, 0.713074, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/4/type = "bezier"
-tracks/4/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2:position:y")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"points": PoolRealArray( 1.72253, -0.25, 0, 0.25, 0, 1.56268, -0.25, 0, 0.25, 0, 1.43582, -0.25, 0, 0.25, 0, 1.84917, -0.25, 0, 0.25, 0, 1.75505, -0.25, 0, 0.25, 0, 1.25613, -0.25, 0, 0.25, 0, 0.800583, -0.25, 0, 0.25, 0, 0.800583, -0.25, 0, 0.25, 0, 1.35634, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/5/type = "bezier"
-tracks/5/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2:rotation_degrees")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"points": PoolRealArray( -39.322, -0.25, 0, 0.25, 0, -39.322, -0.25, 0, 0.25, 0, -52.2255, -0.25, 0, 0.25, 0, -20.5029, -0.25, 0, 0.25, 0, -37.9949, -0.25, 0, 0.25, 0, -70.2937, -0.25, 0, 0.25, 0, -84.8923, -0.25, 0, 0.25, 0, -105.176, -0.25, 0, 0.25, 0, -69.9995, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/6/type = "bezier"
-tracks/6/path = NodePath("Torso/Hips/RightLeg:position:x")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/keys = {
-"points": PoolRealArray( -1.35341, -0.25, 0, 0.25, 0, -1.01721, -0.25, 0, 0.25, 0, -0.0697479, -0.25, 0, 0.25, 0, 0.572098, -0.25, 0, 0.25, 0, 0.724899, -0.25, 0, 0.25, 0, 0.724899, -0.25, 0, 0.25, 0, -0.405975, -0.25, 0, 0.25, 0, -0.925552, -0.25, 0, 0.25, 0, -0.803299, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/7/type = "bezier"
-tracks/7/path = NodePath("Torso/Hips/RightLeg:position:y")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/keys = {
-"points": PoolRealArray( 1.47493, -0.25, 0, 0.25, 0, 1.47493, -0.25, 0, 0.25, 0, 1.90283, -0.25, 0, 0.25, 0, 1.78058, -0.25, 0, 0.25, 0, 1.68889, -0.25, 0, 0.25, 0, 1.68889, -0.25, 0, 0.25, 0, 1.65833, -0.25, 0, 0.25, 0, 1.62776, -0.25, 0, 0.25, 0, 1.71944, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/8/type = "bezier"
-tracks/8/path = NodePath("Torso/Hips/RightLeg:rotation_degrees")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/keys = {
-"points": PoolRealArray( 43.3471, -0.25, 0, 0.25, 0, 43.3471, -0.25, 0, 0.25, 0, 10.8124, -0.25, 0, 0.25, 0, -15.1987, -0.25, 0, 0.25, 0, -39.0684, -0.25, 0, 0.25, 0, -45.2035, -0.25, 0, 0.25, 0, 19.567, -0.25, 0, 0.25, 0, 37.8934, -0.25, 0, 0.25, 0, 37.8934, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/9/type = "bezier"
-tracks/9/path = NodePath("Torso/Hips/RightLeg/RightLeg2:position:x")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/keys = {
-"points": PoolRealArray( 0.506195, -0.25, 0, 0.25, 0, 1.0878, -0.25, 0, 0.25, 0, 1.12491, -0.25, 0, 0.25, 0, 1.03677, -0.25, 0, 0.25, 0, 0.478149, -0.25, 0, 0.25, 0, 0.152969, -0.25, 0, 0.25, 0, 0.949799, -0.25, 0, 0.25, 0, 0.716675, -0.25, 0, 0.25, 0, 0.344177, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/10/type = "bezier"
-tracks/10/path = NodePath("Torso/Hips/RightLeg/RightLeg2:position:y")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/keys = {
-"points": PoolRealArray( 1.44029, -0.25, 0, 0.25, 0, 0.765198, -0.25, 0, 0.25, 0, 0.633652, -0.25, 0, 0.25, 0, 0.958115, -0.25, 0, 0.25, 0, 1.64626, -0.25, 0, 0.25, 0, 1.92607, -0.25, 0, 0.25, 0, 1.1563, -0.25, 0, 0.25, 0, 1.45392, -0.25, 0, 0.25, 0, 1.82128, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/11/type = "bezier"
-tracks/11/path = NodePath("Torso/Hips/RightLeg/RightLeg2:rotation_degrees")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/keys = {
-"points": PoolRealArray( -43.0657, -0.25, 0, 0.25, 0, -86.9422, -0.25, 0, 0.25, 0, -86.9422, -0.25, 0, 0.25, 0, -89.5198, -0.25, 0, 0.25, 0, -37.435, -0.25, 0, 0.25, 0, -5.33336, -0.25, 0, 0.25, 0, -64.9182, -0.25, 0, 0.25, 0, -48.1674, -0.25, 0, 0.25, 0, -19.3847, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-
-[sub_resource type="Animation" id=19]
-length = 0.9
-loop = true
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Torso/Hips/LeftLeg:position:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PoolRealArray( 1.04134, -0.25, 0, 0.25, 0, 0.518555, -0.25, 0, 0.25, 0, 0.319397, -0.25, 0, 0.25, 0, -0.626587, -0.25, 0, 0.25, 0, -0.900421, -0.25, 0, 0.25, 0, -0.651474, -0.25, 0, 0.25, 0, -0.203384, -0.25, 0, 0.25, 0, 0.618134, -0.25, 0, 0.25, 0, 1.36496, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("Torso/Hips/LeftLeg:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"points": PoolRealArray( 1.67531, -0.25, 0, 0.25, 0, 1.77489, -0.25, 0, 0.25, 0, 1.77489, -0.25, 0, 0.25, 0, 1.62552, -0.25, 0, 0.25, 0, 1.77487, -0.25, 0, 0.25, 0, 1.77487, -0.25, 0, 0.25, 0, 1.79977, -0.25, 0, 0.25, 0, 1.60065, -0.25, 0, 0.25, 0, 1.45128, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/2/type = "bezier"
-tracks/2/path = NodePath("Torso/Hips/LeftLeg:rotation_degrees")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"points": PoolRealArray( -18.5702, -0.25, 0, 0.25, 0, -38.5768, -0.25, 0, 0.25, 0, -17.9135, -0.25, 0, 0.25, 0, 27.345, -0.25, 0, 0.25, 0, 35.3847, -0.25, 0, 0.25, 0, 10.0679, -0.25, 0, 0.25, 0, -14.8415, -0.25, 0, 0.25, 0, -37.666, -0.25, 0, 0.25, 0, -52.8765, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/3/type = "bezier"
-tracks/3/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2:position:x")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -0.610504, -0.25, 0, 0.25, 0, -0.832764, -0.25, 0, 0.25, 0, -0.59491, -0.25, 0, 0.25, 0, -0.59491, -0.25, 0, 0.25, 0, -0.932556, -0.25, 0, 0.25, 0, -0.83197, -0.25, 0, 0.25, 0, -0.854431, -0.25, 0, 0.25, 0, -0.773911, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/4/type = "bezier"
-tracks/4/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2:position:y")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"points": PoolRealArray( 1.75, -0.25, 0, 0.25, 0, 1.677, -0.25, 0, 0.25, 0, 1.47433, -0.25, 0, 0.25, 0, 1.77173, -0.25, 0, 0.25, 0, 1.77173, -0.25, 0, 0.25, 0, 1.57886, -0.25, 0, 0.25, 0, 1.29642, -0.25, 0, 0.25, 0, 1.1218, -0.25, 0, 0.25, 0, 1.31067, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/5/type = "bezier"
-tracks/5/path = NodePath("Torso/Hips/LeftLeg/LeftLeg2:rotation_degrees")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 54.6344, -0.25, 0, 0.25, 0, 68.1557, -0.25, 0, 0.25, 0, 34.1175, -0.25, 0, 0.25, 0, 43.7221, -0.25, 0, 0.25, 0, 80.3745, -0.25, 0, 0.25, 0, 91.6715, -0.25, 0, 0.25, 0, 88.8735, -0.25, 0, 0.25, 0, 53.5431, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/6/type = "bezier"
-tracks/6/path = NodePath("Torso/Hips/RightLeg:position:x")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/keys = {
-"points": PoolRealArray( -1.14091, -0.25, 0, 0.25, 0, -0.618134, -0.25, 0, 0.25, 0, 0.10379, -0.25, 0, 0.25, 0, 0.55191, -0.25, 0, 0.25, 0, 0.850647, -0.25, 0, 0.25, 0, 0.651489, -0.25, 0, 0.25, 0, 0.651489, -0.25, 0, 0.25, 0, -0.643021, -0.25, 0, 0.25, 0, -1.11601, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/7/type = "bezier"
-tracks/7/path = NodePath("Torso/Hips/RightLeg:position:y")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/keys = {
-"points": PoolRealArray( 1.77489, -0.25, 0, 0.25, 0, 1.89935, -0.25, 0, 0.25, 0, 1.84956, -0.25, 0, 0.25, 0, 1.77487, -0.25, 0, 0.25, 0, 1.70018, -0.25, 0, 0.25, 0, 1.94913, -0.25, 0, 0.25, 0, 1.79976, -0.25, 0, 0.25, 0, 1.84955, -0.25, 0, 0.25, 0, 1.65039, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/8/type = "bezier"
-tracks/8/path = NodePath("Torso/Hips/RightLeg:rotation_degrees")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/keys = {
-"points": PoolRealArray( 25.5676, -0.25, 0, 0.25, 0, 1.13555, -0.25, 0, 0.25, 0, 335.661, -0.25, 0, 0.25, 0, 320.489, -0.25, 0, 0.25, 0, 313.394, -0.25, 0, 0.25, 0, 313.694, -0.25, 0, 0.25, 0, 315.147, -0.25, 0, 0.25, 0, 379.202, -0.25, 0, 0.25, 0, 393.788, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/9/type = "bezier"
-tracks/9/path = NodePath("Torso/Hips/RightLeg/RightLeg2:position:x")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/keys = {
-"points": PoolRealArray( -0.771408, -0.25, 0, 0.25, 0, -0.972992, -0.25, 0, 0.25, 0, -0.972992, -0.25, 0, 0.25, 0, -0.908661, -0.25, 0, 0.25, 0, -0.657059, -0.25, 0, 0.25, 0, -0.397499, -0.25, 0, 0.25, 0, -0.76767, -0.25, 0, 0.25, 0, -0.508026, -0.25, 0, 0.25, 0, -0.687546, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/10/type = "bezier"
-tracks/10/path = NodePath("Torso/Hips/RightLeg/RightLeg2:position:y")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/keys = {
-"points": PoolRealArray( 1.29114, -0.25, 0, 0.25, 0, 1.17062, -0.25, 0, 0.25, 0, 1.17062, -0.25, 0, 0.25, 0, 1.28824, -0.25, 0, 0.25, 0, 1.73553, -0.25, 0, 0.25, 0, 1.93512, -0.25, 0, 0.25, 0, 1.74243, -0.25, 0, 0.25, 0, 1.73108, -0.25, 0, 0.25, 0, 1.73137, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-tracks/11/type = "bezier"
-tracks/11/path = NodePath("Torso/Hips/RightLeg/RightLeg2:rotation_degrees")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/keys = {
-"points": PoolRealArray( 78.2623, -0.25, 0, 0.25, 0, 100.236, -0.25, 0, 0.25, 0, 100.236, -0.25, 0, 0.25, 0, 77.8788, -0.25, 0, 0.25, 0, 44.5188, -0.25, 0, 0.25, 0, 22.9561, -0.25, 0, 0.25, 0, 61.848, -0.25, 0, 0.25, 0, 31.9824, -0.25, 0, 0.25, 0, 48.0522, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 )
-}
-
-[sub_resource type="CapsuleShape2D" id=20]
-radius = 1.5
-height = 10.5
-
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 141.465, 231.585 )
+collision/safe_margin = 3.0
 script = ExtResource( 4 )
 
-[node name="Torso" type="Sprite" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
+anims/Idle = SubResource( 17 )
+anims/InAir = SubResource( 21 )
+anims/Jump = SubResource( 22 )
+anims/RunLeft = SubResource( 18 )
+anims/RunRight = SubResource( 19 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.187, 0.187 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 20 )
+
+[node name="Light2D" type="Light2D" parent="."]
+texture = ExtResource( 3 )
+energy = 0.25
+
+[node name="Sprite" type="Node2D" parent="."]
+position = Vector2( 0, 2 )
+
+[node name="Torso" type="Sprite" parent="Sprite"]
 material = ExtResource( 1 )
+position = Vector2( 0, 0.001 )
 z_index = 10
 texture = SubResource( 1 )
 
-[node name="Neck" type="Sprite" parent="Torso"]
+[node name="Neck" type="Sprite" parent="Sprite/Torso"]
 material = ExtResource( 1 )
 position = Vector2( 0, -2.5 )
 z_index = -1
@@ -695,7 +1844,7 @@ __meta__ = {
 "_edit_ik_": true
 }
 
-[node name="Head" type="Sprite" parent="Torso/Neck"]
+[node name="Head" type="Sprite" parent="Sprite/Torso/Neck"]
 material = ExtResource( 1 )
 position = Vector2( 0, -2.25 )
 texture = SubResource( 3 )
@@ -704,27 +1853,28 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Node2D" type="Node2D" parent="Torso/Neck/Head"]
+[node name="Node2D" type="Node2D" parent="Sprite/Torso/Neck/Head"]
 position = Vector2( -0.0449371, -1.88724 )
 
-[node name="LeftArm" type="Sprite" parent="Torso"]
+[node name="LeftArm" type="Sprite" parent="Sprite/Torso"]
 material = ExtResource( 1 )
 position = Vector2( -2, 0 )
-z_index = 1
+z_index = -1
 texture = SubResource( 4 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="LeftForearm" type="Sprite" parent="Torso/LeftArm"]
+[node name="LeftForearm" type="Sprite" parent="Sprite/Torso/LeftArm"]
 material = ExtResource( 1 )
 position = Vector2( -0.5, 1.75 )
+z_index = 3
 texture = SubResource( 5 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="LeftHand" type="Sprite" parent="Torso/LeftArm/LeftForearm"]
+[node name="LeftHand" type="Sprite" parent="Sprite/Torso/LeftArm/LeftForearm"]
 material = ExtResource( 1 )
 position = Vector2( 0, 1.35 )
 texture = SubResource( 6 )
@@ -732,13 +1882,13 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Node2D" type="Node2D" parent="Torso/LeftArm/LeftForearm/LeftHand"]
+[node name="Node2D" type="Node2D" parent="Sprite/Torso/LeftArm/LeftForearm/LeftHand"]
 position = Vector2( 0.0249023, 0.423203 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="RightArm" type="Sprite" parent="Torso"]
+[node name="RightArm" type="Sprite" parent="Sprite/Torso"]
 material = ExtResource( 1 )
 position = Vector2( 2, 0 )
 z_index = -2
@@ -747,15 +1897,16 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="RightForearm" type="Sprite" parent="Torso/RightArm"]
+[node name="RightForearm" type="Sprite" parent="Sprite/Torso/RightArm"]
 material = ExtResource( 1 )
 position = Vector2( 0.5, 1.75 )
+z_index = -3
 texture = SubResource( 8 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="LeftHand" type="Sprite" parent="Torso/RightArm/RightForearm"]
+[node name="LeftHand" type="Sprite" parent="Sprite/Torso/RightArm/RightForearm"]
 material = ExtResource( 1 )
 position = Vector2( 0, 1.35 )
 rotation = 0.0242677
@@ -764,13 +1915,13 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Node2D" type="Node2D" parent="Torso/RightArm/RightForearm/LeftHand"]
+[node name="Node2D" type="Node2D" parent="Sprite/Torso/RightArm/RightForearm/LeftHand"]
 position = Vector2( 0.0249023, 0.423203 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="flashlight" type="Node2D" parent="Torso/RightArm/RightForearm/LeftHand/Node2D"]
+[node name="flashlight" type="Node2D" parent="Sprite/Torso/RightArm/RightForearm/LeftHand/Node2D"]
 visible = false
 rotation = -0.0242677
 script = ExtResource( 7 )
@@ -778,11 +1929,11 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="flashlight" type="Sprite" parent="Torso/RightArm/RightForearm/LeftHand/Node2D/flashlight"]
+[node name="flashlight" type="Sprite" parent="Sprite/Torso/RightArm/RightForearm/LeftHand/Node2D/flashlight"]
 z_index = 10
 texture = ExtResource( 6 )
 
-[node name="Light2D" type="Light2D" parent="Torso/RightArm/RightForearm/LeftHand/Node2D/flashlight"]
+[node name="Light2D" type="Light2D" parent="Sprite/Torso/RightArm/RightForearm/LeftHand/Node2D/flashlight"]
 enabled = false
 texture = ExtResource( 5 )
 offset = Vector2( 46, 0 )
@@ -790,12 +1941,12 @@ texture_scale = 0.35
 shadow_enabled = true
 shadow_gradient_length = 0.1
 
-[node name="Glow" type="Light2D" parent="Torso/RightArm/RightForearm/LeftHand/Node2D/flashlight"]
+[node name="Glow" type="Light2D" parent="Sprite/Torso/RightArm/RightForearm/LeftHand/Node2D/flashlight"]
 enabled = false
 texture = ExtResource( 3 )
 energy = 0.5
 
-[node name="Hips" type="Sprite" parent="Torso"]
+[node name="Hips" type="Sprite" parent="Sprite/Torso"]
 material = ExtResource( 1 )
 position = Vector2( 0, 2.75 )
 texture = SubResource( 9 )
@@ -803,7 +1954,7 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Cape" type="Sprite" parent="Torso/Hips"]
+[node name="Cape" type="Sprite" parent="Sprite/Torso/Hips"]
 material = ExtResource( 1 )
 position = Vector2( 0, 1 )
 z_index = -2
@@ -813,7 +1964,7 @@ __meta__ = {
 "_edit_ik_": true
 }
 
-[node name="Cape2" type="Sprite" parent="Torso/Hips/Cape"]
+[node name="Cape2" type="Sprite" parent="Sprite/Torso/Hips/Cape"]
 material = ExtResource( 1 )
 position = Vector2( 0, 0.75 )
 z_index = -2
@@ -822,7 +1973,7 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Cape3" type="Sprite" parent="Torso/Hips/Cape/Cape2"]
+[node name="Cape3" type="Sprite" parent="Sprite/Torso/Hips/Cape/Cape2"]
 material = ExtResource( 1 )
 position = Vector2( 0, 0.75 )
 z_index = -2
@@ -831,78 +1982,56 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Node2D" type="Node2D" parent="Torso/Hips/Cape/Cape2/Cape3"]
+[node name="Node2D" type="Node2D" parent="Sprite/Torso/Hips/Cape/Cape2/Cape3"]
 position = Vector2( 0.0497894, 0.472992 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="LeftLeg" type="Sprite" parent="Torso/Hips"]
+[node name="LeftLeg" type="Sprite" parent="Sprite/Torso/Hips"]
 material = ExtResource( 1 )
-position = Vector2( -0.380144, 1.71912 )
-rotation = 0.262314
+position = Vector2( -1, 1.75 )
 z_index = -2
 texture = SubResource( 13 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="LeftLeg2" type="Sprite" parent="Torso/Hips/LeftLeg"]
+[node name="LeftLeg2" type="Sprite" parent="Sprite/Torso/Hips/LeftLeg"]
 material = ExtResource( 1 )
-position = Vector2( 0.969482, 0.800583 )
-rotation = -1.48533
+position = Vector2( 0, 1.75 )
 z_index = -2
 texture = SubResource( 14 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Node2D" type="Node2D" parent="Torso/Hips/LeftLeg/LeftLeg2"]
+[node name="Node2D" type="Node2D" parent="Sprite/Torso/Hips/LeftLeg/LeftLeg2"]
 position = Vector2( 0, 0.91716 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="RightLeg" type="Sprite" parent="Torso/Hips"]
+[node name="RightLeg" type="Sprite" parent="Sprite/Torso/Hips"]
 material = ExtResource( 1 )
-position = Vector2( -0.411383, 1.65801 )
-rotation = 0.344838
+position = Vector2( 1, 1.75 )
 z_index = -2
 texture = SubResource( 15 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="RightLeg2" type="Sprite" parent="Torso/Hips/RightLeg"]
+[node name="RightLeg2" type="Sprite" parent="Sprite/Torso/Hips/RightLeg"]
 material = ExtResource( 1 )
-position = Vector2( 0.947372, 1.15939 )
-rotation = -1.12999
+position = Vector2( 0, 1.75 )
 z_index = -2
 texture = SubResource( 16 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Node2D" type="Node2D" parent="Torso/Hips/RightLeg/RightLeg2"]
+[node name="Node2D" type="Node2D" parent="Sprite/Torso/Hips/RightLeg/RightLeg2"]
 position = Vector2( 0, 0.91716 )
 __meta__ = {
 "_edit_bone_": true
 }
-
-[node name="Camera2D" type="Camera2D" parent="."]
-current = true
-zoom = Vector2( 0.187, 0.187 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "Idle"
-anims/Idle = SubResource( 17 )
-anims/RunLeft = SubResource( 18 )
-anims/RunRight = SubResource( 19 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-shape = SubResource( 20 )
-
-[node name="Light2D" type="Light2D" parent="."]
-texture = ExtResource( 3 )
-energy = 0.25
