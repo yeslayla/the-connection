@@ -32,19 +32,23 @@ func finish_dialog():
 	$Dialog.hide()
 
 func clear_choices():
-	$Dialog/Choices.hide()
-	for i in range($Dialog/Choices.get_child_count()):
-		$Dialog/Choices.get_child(i).queue_free()
+	$Dialog/ChoicesPanel.hide()
+	for i in range($Dialog/ChoicesPanel/Choices.get_child_count()):
+		$Dialog/ChoicesPanel/Choices.get_child(i).queue_free()
 	
 func add_choice(speaker : Node, choice_id : int, choice_text : String):
-	$Dialog/Choices.hide()
+	$Dialog/ChoicesPanel.hide()
 	var button = Button.new()
 	button.text = choice_text
 	button.connect("button_down", speaker, "_on_choice", [choice_id])
-	$Dialog/Choices.add_child(button)
+	$Dialog/ChoicesPanel/Choices.add_child(button)
 
 func show_choices():
-	$Dialog/Choices.show()
+	$Dialog/ChoicesPanel.show()
+	if $Dialog/ChoicesPanel/Choices.get_child_count() == 0:
+		var label = Label.new()
+		label.text = "Press SPACE to continue"
+		$Dialog/ChoicesPanel/Choices.add_child(label)
 
 func display_tip(tip):
 	$Tip.modulate.a = 0

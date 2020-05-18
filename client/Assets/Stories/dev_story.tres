@@ -1,0 +1,1213 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_EditorStory/EXP_EditorStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Story_editor"
+names = {
+"aura_meeting": 12,
+"aura_meeting_gun": 13,
+"codex_odd_activities": 14,
+"into_speak_ceo": 5,
+"intro_major_worker": 11,
+"intro_meet_ceo": 4,
+"intro_misc_worker_1": 9,
+"intro_misc_worker_2": 10,
+"intro_science": 1,
+"intro_science_followup": 3,
+"intro_shipping_codex": 8,
+"intro_text": 2,
+"intro_transportship": 6,
+"unconfigured": 7
+}
+story = {
+1: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Scientist's Introduction following cinematic",
+"name": "intro_science",
+"nodes": {
+1: {
+"graph_offset": Vector2( 0, 80 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Welcome to Ravenworks.",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 520, 80 ),
+"links": {
+0: 6,
+1: 4,
+2: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "Are you ready to furfill your function?
+<choice>Yes</choice>
+<choice>No</choice>
+<choice>Where am I?</choice>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 520, 320 ),
+"links": {
+0: 2,
+1: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "You are in Ravenworks cloining facility in Central City.
+<choice>Okay</choice>
+<choice>Central City?</choice>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 520, -120 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Hmmm... The obidence chip must be malfunctioning.",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 520, 540 ),
+"links": {
+0: 8
+},
+"rect_size": Vector2( 441, 165 ),
+"slot_amount": 1,
+"text": "Central City is the location of the five corporate seats of power.",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 1000, 80 ),
+"links": {
+0: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Excellent.",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 1480, 80 ),
+"links": {
+0: 10
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "There are reports that an executive here at Ravenworks is
+working against the company's interests.",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( 1020, 540 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "You died hundreds of years ago and I do not have time to explain 
+to you over 100 years of history.",
+"type": "line"
+},
+9: {
+"graph_offset": Vector2( 2440, 80 ),
+"links": {
+0: 12
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Do you accept this programming?
+<choice>Yes</choice>",
+"type": "line"
+},
+10: {
+"graph_offset": Vector2( 1960, 80 ),
+"links": {
+0: 9,
+1: 11
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "The CEO of Ravenworks has decided to task you with finding
+and killing this individual.
+<choice>Okay</choice>
+<choice>Why me?</choice>",
+"type": "line"
+},
+11: {
+"graph_offset": Vector2( 1960, 300 ),
+"links": {
+0: 9
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I do not know.",
+"type": "line"
+},
+12: {
+"graph_offset": Vector2( 2920, 80 ),
+"links": {
+0: 13
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Good. You have been given Level 1 security clearance
+in Ravenwork facilities.",
+"type": "line"
+},
+13: {
+"graph_offset": Vector2( 3400, 80 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "CEO Grant Blevins would like to speak to you about the 
+investigation. His office is located at the top of
+Central Tower.",
+"type": "line"
+}
+}
+},
+2: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Cinematic Intro Text",
+"name": "intro_text",
+"nodes": {
+1: {
+"graph_offset": Vector2( 60, -300 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Name: Veronica SCENE Gilmore",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 540, -300 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Occupation: Private Investigator",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 1020, -300 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Day of Death: 8-21-2032",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 1500, -300 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Intializing...",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 1980, -300 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Welcome SCENE!",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 2460, -300 ),
+"links": {
+0: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "In correspondance with HR 53151
+Ravenetworks has repurposed your mind
+for our services.",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 2940, -300 ),
+"links": {
+0: 8
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Transfering to physical system...",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( 3420, -300 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Caution: Extreme pain is likely.",
+"type": "line"
+}
+}
+},
+3: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Interacting with scientist after intro",
+"name": "intro_science_followup",
+"nodes": {
+1: {
+"graph_offset": Vector2( -1300, -860 ),
+"links": {
+0: 3,
+1: 2
+},
+"rect_size": Vector2( 441, 172 ),
+"slot_amount": 2,
+"text": "Did you need something?
+<choice>No</choice>
+<choice>You are the traitor!</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -780, -820 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Don't make such false accusations. Get back to your job
+and find the real culpurit.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -780, -1000 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Okay then.",
+"type": "line"
+}
+}
+},
+4: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "First interaction with CEO Grant Blevins",
+"name": "intro_meet_ceo",
+"nodes": {
+1: {
+"graph_offset": Vector2( 60, 0 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Hello Scene.",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 540, 0 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "It's good to see they have not eliminated you yet. Most my attempts
+to find the mole up until this point have ended in swift failure.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 1020, 0 ),
+"links": {
+0: 7,
+1: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "You will not disappoint me, right Scene?
+<choice>Of course not!</choice>
+<choice>I will do my best</choice>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 1500, 100 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Ha! Such a 21st century phrase.",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 1980, 100 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "You will need more than just your wits to defeat this
+traitor.",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 2460, 20 ),
+"links": {
+0: 8
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "So much lost...",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 1760, -80 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "We will see. You had a great track record in the 21st century,
+but we both remeber how your final job went.",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( 2940, 20 ),
+"links": {
+0: 9,
+1: 10
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "What do you think of our facility here so far?
+<choice>It's amazing!</choice>
+<choice>I haven't seen much yet.</choice>",
+"type": "line"
+},
+9: {
+"graph_offset": Vector2( 3760, 20 ),
+"links": {
+0: 11
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "It's always interesting hearing the perspectives of those from the past.",
+"type": "line"
+},
+10: {
+"graph_offset": Vector2( 3380, 240 ),
+"links": {
+0: 9
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Unfortunate.",
+"type": "line"
+},
+11: {
+"graph_offset": Vector2( 4240, 20 ),
+"links": {
+0: 12
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Now away with the pleasantries.",
+"type": "line"
+},
+12: {
+"graph_offset": Vector2( 4720, 20 ),
+"links": {
+0: 13
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "There has been a concerning amount of leaks of secret projects
+and internal data to our competitor Duke Enterprises.",
+"type": "line"
+},
+13: {
+"graph_offset": Vector2( 5200, 20 ),
+"links": {
+0: 14
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Due the volume and nature of the data, the one conspiring with
+the Dukes must have extremely high security clearance.",
+"type": "line"
+},
+14: {
+"graph_offset": Vector2( 5680, 20 ),
+"links": {
+0: 16
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "That is why I have given you nearly full access to our facilities.
+This traitor could be anyone.",
+"type": "line"
+},
+15: {
+"graph_offset": Vector2( 6660, 20 ),
+"links": {
+0: 17,
+1: 19,
+2: 20
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "Do you have any questions before we get started?
+<choice>Why me?</choice>
+<choice>What year is it?</choice>
+<choice>Where do I start?</choice>",
+"type": "line"
+},
+16: {
+"graph_offset": Vector2( 6160, 20 ),
+"links": {
+0: 15
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I'm trusting you Scene. It's not a common thing in our time, but I have
+little choice.",
+"type": "line"
+},
+17: {
+"graph_offset": Vector2( 7140, -100 ),
+"links": {
+0: 18
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I have always been sympathatic to societies of the past. Things were done...
+different than they are now.",
+"type": "line"
+},
+18: {
+"graph_offset": Vector2( 7620, -100 ),
+"links": {
+0: 15
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "You were one of the best investigators of your time! It was sad
+you got caught up in the events of the old capital.",
+"type": "line"
+},
+19: {
+"graph_offset": Vector2( 7140, 80 ),
+"links": {
+0: 15
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "It 3024, making it around 1000 years since your death.",
+"type": "line"
+},
+20: {
+"graph_offset": Vector2( 7140, 260 ),
+"links": {
+0: 28,
+1: 21,
+2: 22
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "We have a shipment of biological materials coming in today. It seems
+like the sort of thing we have had troubles with recently.
+<choice>Okay, where?</choice>
+<choice>What sort of troubles?</choice>
+<choice>Biological materials?</choice>",
+"type": "line"
+},
+21: {
+"graph_offset": Vector2( 7620, 300 ),
+"links": {
+0: 24
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Some of the data ending up in the Duke's hands is shipping information.",
+"type": "line"
+},
+22: {
+"graph_offset": Vector2( 7620, 500 ),
+"links": {
+0: 23
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Yes, for our cloning facilities among other things.",
+"type": "line"
+},
+23: {
+"graph_offset": Vector2( 8100, 500 ),
+"links": {
+0: 27
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Without such shipments, you wouldn't be standing here.",
+"type": "line"
+},
+24: {
+"graph_offset": Vector2( 8100, 300 ),
+"links": {
+0: 25,
+1: 26
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "We have had too many missing shipments stopped by the coporate police.
+<choice>Coporate police?</choice>
+<choice>Why would they stop the shipments?</choice>",
+"type": "line"
+},
+25: {
+"graph_offset": Vector2( 8580, 260 ),
+"links": {
+0: 27
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Once democratic powers fell, enforcement was placed in the hand of the Corporate Collective,
+the closest thing to a centralized government.",
+"type": "line"
+},
+26: {
+"graph_offset": Vector2( 8580, 420 ),
+"links": {
+0: 27
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "In corporate politics, our opposition likes to put in place agreements that
+hinder our success. We are not alone in ignoring many of these agreements.",
+"type": "line"
+},
+27: {
+"graph_offset": Vector2( 9060, 260 ),
+"links": {
+0: 28
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Anyway,",
+"type": "line"
+},
+28: {
+"graph_offset": Vector2( 9580, 100 ),
+"links": {
+0: 29
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "This building's shipping facility is located on mid levels. They should
+not be too far out of reach.",
+"type": "line"
+},
+29: {
+"graph_offset": Vector2( 10060, 100 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Keep me up to date on your progress.",
+"type": "line"
+}
+}
+},
+5: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Non-event CEO interactions",
+"name": "into_speak_ceo",
+"nodes": {
+1: {
+"graph_offset": Vector2( 0, -360 ),
+"links": {
+0: 2,
+1: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "Any updates?
+<choice>Nothing yet</choice>
+<choice>Where is the shipping facility?</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 560, -420 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Ravenworks is counting on you.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 560, -220 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "It is on the mid level.",
+"type": "line"
+}
+}
+},
+6: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Interact with landed transportship",
+"name": "intro_transportship",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "This seems to be a Ravenetworks transport, but it's empty. Is this
+suppose to be carrying the biological shipment?",
+"type": "line"
+}
+}
+},
+7: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Default interaction for dialog interaction",
+"name": "unconfigured",
+"nodes": {
+1: {
+"graph_offset": Vector2( 200, 20 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "This is an object.",
+"type": "line"
+}
+}
+},
+8: {
+"available_nid": [ 2 ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Messages related to biological materials",
+"name": "intro_shipping_codex",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 448, 170 ),
+"slot_amount": 1,
+"text": "Cargo load:
+Organic Matter - MISSING
+Stem Cells - MISSING
+Cubic Carbon - MISSING",
+"type": "line"
+}
+}
+},
+9: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Misc worker talk",
+"name": "intro_misc_worker_1",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "How are we missing another shipment?",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 340, -280 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I hope the supervisor doesn't replace us.",
+"type": "line"
+}
+}
+},
+10: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Misc worker talk",
+"name": "intro_misc_worker_2",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 3,
+1: 2,
+2: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "Hey Aura! How have you been?
+<choice>Aura?</choice>
+<choice>You know me?</choice>
+<choice>I am Scene.</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 440, -200 ),
+"links": {
+0: 5,
+1: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "Yeah, we met a few days ago.
+<choice>Weird</choice>
+<choice>No?</choice>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 440, -360 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Oh... nevermind.",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 440, 0 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Oh, sorry Scene.",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 920, -200 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Yeah, we don't see many faces like yours around here.",
+"type": "line"
+}
+}
+},
+11: {
+"available_nid": [  ],
+"groups": [ "Introduction" ],
+"human_readable_description": "Work who drove spacecraft",
+"name": "intro_major_worker",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, -180 ),
+"links": {
+0: 2,
+1: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "I can't believe we got rerouted.
+<choice>Rerouted?</choice>
+<choice>What happened to the cargo?</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 540, -220 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "During the flight over here, the navigation computer redirected to
+the lower levels.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 1020, -220 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "When I got there, Ravenworks workers unloaded the craft.",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 540, -40 ),
+"links": {
+0: 5,
+1: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "Are you looking for it?
+<choice>Yes</choice>
+<choice>No</choice>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 1020, -40 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I lost the cargo after my stop at the lower levels. I was just
+following the navigation computer and it was taken by
+Ravenwork staff!",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 1500, -40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Please do not terminate me!",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 1020, 140 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Oh, well it was unloaded by Ravenwork staff at the lower level.",
+"type": "line"
+}
+}
+},
+12: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Meeting your clone for the first time",
+"name": "aura_meeting",
+"nodes": {
+1: {
+"graph_offset": Vector2( 20, 40 ),
+"links": {
+0: 5,
+1: 2,
+2: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "Hello Veronica.
+<choice>...</choice>
+<choice>Who are you?</choice>
+<choice>Stop!</choice>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 520, 60 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I am you.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 1000, 80 ),
+"links": {
+0: 6,
+1: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "Well, I am Veronica Gilmore. Designation: Aura.
+<choice>Explain</choice>
+<choice>You are lying!</choice>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 460, 300 ),
+"links": {
+0: 8,
+1: 11,
+2: 12
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 3,
+"text": "As you can see now, you are not the first person cloned for Ravenworks profit
+margins.
+<choice>Are you the traitor?</choice>
+<choice>Return the shipment!</choice>
+<choice>We can talk</choice>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 520, -120 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Oh... They truely had you didn't they.",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 1480, -100 ),
+"links": {
+0: 17,
+1: 19
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "You were not created to stop Duke Enterprises. You were created to
+surpress democratic sympathizers.
+<choice>Democratic Symathizers?</choice>
+<choice>What about the leaks?</choice>",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 1480, 100 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Then you will die in ignorance.",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( 1000, 280 ),
+"links": {
+0: 9
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "No, Grant is very much aware of my loyalties.",
+"type": "line"
+},
+9: {
+"graph_offset": Vector2( 1480, 280 ),
+"links": {
+0: 10
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I am Commander Veronic Gilmore of the Resitance Forces.",
+"type": "line"
+},
+10: {
+"graph_offset": Vector2( 1960, 280 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Grant is a cruel man...",
+"type": "line"
+},
+11: {
+"graph_offset": Vector2( 1000, 460 ),
+"links": {
+0: 15
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "This shipment is being delivered to Resistance medical facilities. It's going to save
+lives, not be used for creating slaves.",
+"type": "line"
+},
+12: {
+"graph_offset": Vector2( 1000, 640 ),
+"links": {
+0: 13
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "There isn't much we can do sadly. I'm presuming you still have
+your implant.",
+"type": "line"
+},
+13: {
+"graph_offset": Vector2( 1480, 640 ),
+"links": {
+0: 14
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Do you want to discuss terms of peace with us?
+<choice>No</choice>",
+"type": "line"
+},
+14: {
+"graph_offset": Vector2( 1960, 640 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "You weren't even given the choice. They programmed you to respond that way.",
+"type": "line"
+},
+15: {
+"graph_offset": Vector2( 1480, 460 ),
+"links": {
+0: 16
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Ravenworks and Duke Enterprises were the ones in the old capitial the day you died.",
+"type": "line"
+},
+16: {
+"graph_offset": Vector2( 1960, 460 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "They're the ones who took advantage of all the death...",
+"type": "line"
+},
+17: {
+"graph_offset": Vector2( 1980, -100 ),
+"links": {
+0: 18
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "The Corporate Collective does not care about human lives. They aren't looking
+out for anyone but their executives.",
+"type": "line"
+},
+18: {
+"graph_offset": Vector2( 2460, -100 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "That leaves those who were automated away to die.",
+"type": "line"
+},
+19: {
+"graph_offset": Vector2( 1980, 60 ),
+"links": {
+0: 20
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "All the leaks came from the resistance.",
+"type": "line"
+},
+20: {
+"graph_offset": Vector2( 2460, 60 ),
+"links": {
+0: 21
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Grant has the foolish idea that he can convince me to work for Ravenworks again.",
+"type": "line"
+},
+21: {
+"graph_offset": Vector2( 2940, 60 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "But after what I learned about the old capital... Never again.",
+"type": "line"
+}
+}
+},
+13: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Getting shot by your clone",
+"name": "aura_meeting_gun",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "I'm sorry Veronica.",
+"type": "line"
+}
+}
+},
+14: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "First hearing on John Demunt",
+"name": "codex_odd_activities",
+"nodes": {
+1: {
+"graph_offset": Vector2( 60, -80 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "Mr.Demunt has pushed for increasing security in the mid levels to account
+for the recent increase in deliveries.",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 540, -80 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "To account for this change, we have moved all non-mandatory security officers
+to the mid and upper levels.",
+"type": "line"
+}
+}
+}
+}
+available_dids = [  ]
+groups = [ "Introduction" ]

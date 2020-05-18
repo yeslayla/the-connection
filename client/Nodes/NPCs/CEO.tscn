@@ -2,7 +2,8 @@
 
 [ext_resource path="res://Scripts/Entities/NPCs/CEO.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Component/StorySpeaker.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Art/Characters/business.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Art/Characters/business.png" type="Texture" id=3]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16.0863, 8 )

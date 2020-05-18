@@ -2,9 +2,7 @@ extends "res://Scripts/Component/Speaker.gd"
 
 signal dialog_exited
 
-const Story_Reader_Class = preload("res://addons/EXP-System-Dialog/Reference_StoryReader/EXP_StoryReader.gd")
-const story_file = preload("res://Assets/Stories/english_story.tres")
-var story_reader = Story_Reader_Class.new()
+var story_reader
 
 var gui
 
@@ -16,7 +14,7 @@ export var speaker_name = ""
 var final_display_message = ""
 
 func _ready():
-	story_reader.read(story_file)
+	story_reader = $"/root/StoryManager".get_reader()
 	
 	connect("updated_text", self, "_on_text_update")
 	connect("finished_text", self, "_on_finish_text")

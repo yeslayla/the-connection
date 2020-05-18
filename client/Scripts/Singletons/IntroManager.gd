@@ -1,8 +1,8 @@
 extends "res://Scripts/Component/Speaker.gd"
 
 
-var Story_Reader_Class = preload("res://addons/EXP-System-Dialog/Reference_StoryReader/EXP_StoryReader.gd")
-var story_reader = Story_Reader_Class.new()
+
+var story_reader
 
 
 var loading_game : bool = false
@@ -16,9 +16,7 @@ const STORY_DID = 2
 
 
 func _ready():
-	var file = load("res://Assets/Stories/english_story.tres")
-	story_reader.read(file)
-	 
+	story_reader = $"/root/StoryManager".get_reader()
 	
 	audio_clip_player = AudioStreamPlayer.new()
 	add_child(audio_clip_player)
