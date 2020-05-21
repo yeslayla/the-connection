@@ -7,7 +7,7 @@ var baseGravity : float = 9.8
 
 # Player movment variables
 var maxMoveVelocity : float = 150
-var moveAcceleration : float = 25
+var moveAcceleration : float = 125
 var moveFriction : float = 65
 var jumpVelocity : float = -150
 var jumped = false
@@ -76,9 +76,9 @@ func user_input():
 			return
 	
 	if(Input.is_action_pressed("ui_left")):
-		moveMotion -= moveAcceleration
+		moveMotion = -moveAcceleration
 	if(Input.is_action_pressed("ui_right")):
-		moveMotion += moveAcceleration
+		moveMotion = moveAcceleration
 		
 	if(is_on_floor() and Input.is_action_just_pressed("ui_up")):
 			motion.y = jumpVelocity

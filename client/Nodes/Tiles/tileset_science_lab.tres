@@ -9,8 +9,6 @@
 [ext_resource path="res://Assets/Art/Tiles/metal_tile.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Art/Tiles/techno_wall_tile.png" type="Texture" id=8]
 
-
-
 [sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
