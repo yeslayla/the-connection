@@ -8,9 +8,7 @@
 [ext_resource path="res://Assets/Art/Objects/flashlight.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Entities/Flashlight.gd" type="Script" id=7]
 
-
-
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=1]
 resource_name = "Idle"
 length = 2.0
 loop = true
@@ -471,7 +469,7 @@ tracks/44/keys = {
 "values": [ Vector2( 0, -2.5 ) ]
 }
 
-[sub_resource type="Animation" id=21]
+[sub_resource type="Animation" id=2]
 resource_name = "InAir"
 length = 1.5
 loop = true
@@ -716,7 +714,7 @@ tracks/23/keys = {
 "times": PoolRealArray( 0, 0.8, 1.5 )
 }
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=3]
 resource_name = "Jump"
 length = 0.7
 tracks/0/type = "bezier"
@@ -870,7 +868,7 @@ tracks/14/keys = {
 "times": PoolRealArray( 0, 0.4 )
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=4]
 resource_name = "RunLeft"
 length = 0.9
 loop = true
@@ -1309,7 +1307,7 @@ tracks/42/keys = {
 "times": PoolRealArray( 0, 0.5, 0.9 )
 }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=5]
 length = 0.9
 loop = true
 tracks/0/type = "bezier"
@@ -1719,109 +1717,107 @@ tracks/39/keys = {
 "times": PoolRealArray( 0, 0.5, 0.9 )
 }
 
-[sub_resource type="CapsuleShape2D" id=20]
-radius = 1.5
-height = 10.5
-
-[sub_resource type="AtlasTexture" id=1]
-flags = 8
-atlas = ExtResource( 2 )
-region = Rect2( 1, 7, 3, 4 )
-
-[sub_resource type="AtlasTexture" id=2]
-flags = 8
-atlas = ExtResource( 2 )
-region = Rect2( 2, 6, 1, 1 )
-
-[sub_resource type="AtlasTexture" id=3]
-flags = 8
-atlas = ExtResource( 2 )
-region = Rect2( 1, 1, 4, 4 )
-
-[sub_resource type="AtlasTexture" id=4]
-flags = 8
-atlas = ExtResource( 2 )
-region = Rect2( 7, 8, 1, 2 )
-
-[sub_resource type="AtlasTexture" id=5]
-flags = 8
-atlas = ExtResource( 2 )
-region = Rect2( 6, 10, 1, 2 )
-
-[sub_resource type="AtlasTexture" id=6]
-flags = 8
-atlas = ExtResource( 2 )
-region = Rect2( 6, 12, 1, 1 )
+[sub_resource type="RectangleShape2D" id=23]
+extents = Vector2( 3.06702, 6.9149 )
 
 [sub_resource type="AtlasTexture" id=7]
 flags = 8
 atlas = ExtResource( 2 )
-region = Rect2( 9, 8, 1, 2 )
+region = Rect2( 1, 7, 3, 4 )
 
 [sub_resource type="AtlasTexture" id=8]
 flags = 8
 atlas = ExtResource( 2 )
-region = Rect2( 10, 10, 1, 2 )
+region = Rect2( 2, 6, 1, 1 )
 
 [sub_resource type="AtlasTexture" id=9]
 flags = 8
 atlas = ExtResource( 2 )
-region = Rect2( 1, 11, 3, 2 )
+region = Rect2( 1, 1, 4, 4 )
 
 [sub_resource type="AtlasTexture" id=10]
 flags = 8
 atlas = ExtResource( 2 )
-region = Rect2( 1, 13, 3, 1 )
+region = Rect2( 7, 8, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=11]
 flags = 8
 atlas = ExtResource( 2 )
-region = Rect2( 1, 14, 3, 1 )
+region = Rect2( 6, 10, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=12]
 flags = 8
 atlas = ExtResource( 2 )
-region = Rect2( 1, 15, 3, 1 )
+region = Rect2( 6, 12, 1, 1 )
 
 [sub_resource type="AtlasTexture" id=13]
 flags = 8
 atlas = ExtResource( 2 )
-region = Rect2( 1, 17, 1, 2 )
+region = Rect2( 9, 8, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=14]
 flags = 8
 atlas = ExtResource( 2 )
-region = Rect2( 1, 19, 1, 2 )
+region = Rect2( 10, 10, 1, 2 )
 
 [sub_resource type="AtlasTexture" id=15]
 flags = 8
 atlas = ExtResource( 2 )
-region = Rect2( 3, 17, 1, 2 )
+region = Rect2( 1, 11, 3, 2 )
 
 [sub_resource type="AtlasTexture" id=16]
+flags = 8
+atlas = ExtResource( 2 )
+region = Rect2( 1, 13, 3, 1 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 8
+atlas = ExtResource( 2 )
+region = Rect2( 1, 14, 3, 1 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 8
+atlas = ExtResource( 2 )
+region = Rect2( 1, 15, 3, 1 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 8
+atlas = ExtResource( 2 )
+region = Rect2( 1, 17, 1, 2 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 8
+atlas = ExtResource( 2 )
+region = Rect2( 1, 19, 1, 2 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 8
+atlas = ExtResource( 2 )
+region = Rect2( 3, 17, 1, 2 )
+
+[sub_resource type="AtlasTexture" id=22]
 flags = 8
 atlas = ExtResource( 2 )
 region = Rect2( 3, 19, 1, 2 )
 
 [node name="Player" type="KinematicBody2D"]
-collision/safe_margin = 3.0
 script = ExtResource( 4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Idle"
-anims/Idle = SubResource( 17 )
-anims/InAir = SubResource( 21 )
-anims/Jump = SubResource( 22 )
-anims/RunLeft = SubResource( 18 )
-anims/RunRight = SubResource( 19 )
+anims/Idle = SubResource( 1 )
+anims/InAir = SubResource( 2 )
+anims/Jump = SubResource( 3 )
+anims/RunLeft = SubResource( 4 )
+anims/RunRight = SubResource( 5 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 zoom = Vector2( 0.187, 0.187 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-shape = SubResource( 20 )
+position = Vector2( -0.0595379, 2.35723 )
+shape = SubResource( 23 )
 
 [node name="Light2D" type="Light2D" parent="."]
 texture = ExtResource( 3 )
@@ -1834,13 +1830,13 @@ position = Vector2( 0, 2 )
 material = ExtResource( 1 )
 position = Vector2( 0, 0.001 )
 z_index = 10
-texture = SubResource( 1 )
+texture = SubResource( 7 )
 
 [node name="Neck" type="Sprite" parent="Sprite/Torso"]
 material = ExtResource( 1 )
 position = Vector2( 0, -2.5 )
 z_index = -1
-texture = SubResource( 2 )
+texture = SubResource( 8 )
 __meta__ = {
 "_edit_bone_": true,
 "_edit_ik_": true
@@ -1849,7 +1845,7 @@ __meta__ = {
 [node name="Head" type="Sprite" parent="Sprite/Torso/Neck"]
 material = ExtResource( 1 )
 position = Vector2( 0, -2.25 )
-texture = SubResource( 3 )
+texture = SubResource( 9 )
 offset = Vector2( 0.5, 0 )
 __meta__ = {
 "_edit_bone_": true
@@ -1862,7 +1858,7 @@ position = Vector2( -0.0449371, -1.88724 )
 material = ExtResource( 1 )
 position = Vector2( -2, 0 )
 z_index = -1
-texture = SubResource( 4 )
+texture = SubResource( 10 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -1871,7 +1867,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( -0.5, 1.75 )
 z_index = 3
-texture = SubResource( 5 )
+texture = SubResource( 11 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -1879,7 +1875,7 @@ __meta__ = {
 [node name="LeftHand" type="Sprite" parent="Sprite/Torso/LeftArm/LeftForearm"]
 material = ExtResource( 1 )
 position = Vector2( 0, 1.35 )
-texture = SubResource( 6 )
+texture = SubResource( 12 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -1894,7 +1890,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( 2, 0 )
 z_index = -2
-texture = SubResource( 7 )
+texture = SubResource( 13 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -1903,7 +1899,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( 0.5, 1.75 )
 z_index = -3
-texture = SubResource( 8 )
+texture = SubResource( 14 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -1912,7 +1908,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( 0, 1.35 )
 rotation = 0.0242677
-texture = SubResource( 6 )
+texture = SubResource( 12 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -1951,7 +1947,7 @@ energy = 0.5
 [node name="Hips" type="Sprite" parent="Sprite/Torso"]
 material = ExtResource( 1 )
 position = Vector2( 0, 2.75 )
-texture = SubResource( 9 )
+texture = SubResource( 15 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -1960,7 +1956,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( 0, 1 )
 z_index = -2
-texture = SubResource( 10 )
+texture = SubResource( 16 )
 __meta__ = {
 "_edit_bone_": true,
 "_edit_ik_": true
@@ -1970,7 +1966,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( 0, 0.75 )
 z_index = -2
-texture = SubResource( 11 )
+texture = SubResource( 17 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -1979,7 +1975,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( 0, 0.75 )
 z_index = -2
-texture = SubResource( 12 )
+texture = SubResource( 18 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -1994,7 +1990,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( -1, 1.75 )
 z_index = -2
-texture = SubResource( 13 )
+texture = SubResource( 19 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -2003,7 +1999,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( 0, 1.75 )
 z_index = -2
-texture = SubResource( 14 )
+texture = SubResource( 20 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -2018,7 +2014,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( 1, 1.75 )
 z_index = -2
-texture = SubResource( 15 )
+texture = SubResource( 21 )
 __meta__ = {
 "_edit_bone_": true
 }
@@ -2027,7 +2023,7 @@ __meta__ = {
 material = ExtResource( 1 )
 position = Vector2( 0, 1.75 )
 z_index = -2
-texture = SubResource( 16 )
+texture = SubResource( 22 )
 __meta__ = {
 "_edit_bone_": true
 }
