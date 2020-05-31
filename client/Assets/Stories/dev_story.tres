@@ -35,7 +35,7 @@ story = {
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Welcome to Ravenworks.",
+"text": "Welcome to Ravenworks. Your designation is SCENE.",
 "type": "line"
 },
 2: {
@@ -61,7 +61,7 @@ story = {
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 2,
-"text": "You are in Ravenworks cloining facility in Central City.
+"text": "You are in Ravenworks main facility in Central City.
 <choice>Okay</choice>
 <choice>Central City?</choice>",
 "type": "line"
@@ -83,13 +83,13 @@ story = {
 },
 "rect_size": Vector2( 441, 165 ),
 "slot_amount": 1,
-"text": "Central City is the location of the five corporate seats of power.",
+"text": "Central City is the capital of the five corporate seats of power.",
 "type": "line"
 },
 6: {
 "graph_offset": Vector2( 1000, 80 ),
 "links": {
-0: 7
+0: 10
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
@@ -97,14 +97,13 @@ story = {
 "type": "line"
 },
 7: {
-"graph_offset": Vector2( 1480, 80 ),
+"graph_offset": Vector2( 2120, 80 ),
 "links": {
-0: 10
+0: 9
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "There are reports that an executive here at Ravenworks is
-working against the company's interests.",
+"text": "You will now serve as an agent of Ravenworks.",
 "type": "line"
 },
 8: {
@@ -114,12 +113,11 @@ working against the company's interests.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "You died hundreds of years ago and I do not have time to explain 
-to you over 100 years of history.",
+"text": "You died hundreds of years ago and I do not have time to explain to you over 100 years of history.",
 "type": "line"
 },
 9: {
-"graph_offset": Vector2( 2440, 80 ),
+"graph_offset": Vector2( 2600, 80 ),
 "links": {
 0: 12
 },
@@ -130,50 +128,46 @@ to you over 100 years of history.",
 "type": "line"
 },
 10: {
-"graph_offset": Vector2( 1960, 80 ),
+"graph_offset": Vector2( 1600, 80 ),
 "links": {
-0: 9,
+0: 7,
 1: 11
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 2,
-"text": "The CEO of Ravenworks has decided to task you with finding
-and killing this individual.
+"text": "The CEO of Ravenworks has decided to clone your template to deal with a sensitive issue.
 <choice>Okay</choice>
 <choice>Why me?</choice>",
 "type": "line"
 },
 11: {
-"graph_offset": Vector2( 1960, 300 ),
+"graph_offset": Vector2( 1920, 300 ),
 "links": {
-0: 9
+0: 7
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "I do not know.",
+"text": "I do not know. ",
 "type": "line"
 },
 12: {
-"graph_offset": Vector2( 2920, 80 ),
+"graph_offset": Vector2( 3080, 80 ),
 "links": {
 0: 13
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Good. You have been given Level 1 security clearance
-in Ravenwork facilities.",
+"text": "Good. You have been given Level 1 security clearance in all Ravenwork facilities.",
 "type": "line"
 },
 13: {
-"graph_offset": Vector2( 3400, 80 ),
+"graph_offset": Vector2( 3560, 80 ),
 "links": {
 
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "CEO Grant Blevins would like to speak to you about the 
-investigation. His office is located at the top of
-Central Tower.",
+"text": "CEO Grant Blevins would like to speak to you as soon as possible. His office is located at the top of Central Tower.",
 "type": "line"
 }
 }
@@ -284,7 +278,7 @@ for our services.",
 "slot_amount": 2,
 "text": "Did you need something?
 <choice>No</choice>
-<choice>You are the traitor!</choice>",
+<choice>What do you think of Grant Blevins?</choice>",
 "type": "line"
 },
 2: {
@@ -294,8 +288,7 @@ for our services.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Don't make such false accusations. Get back to your job
-and find the real culpurit.",
+"text": "He has done good for me and Ravenworks.",
 "type": "line"
 },
 3: {
@@ -333,25 +326,26 @@ and find the real culpurit.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "It's good to see they have not eliminated you yet. Most my attempts
-to find the mole up until this point have ended in swift failure.",
+"text": "It's good to see they have not eliminated you yet. Most my attempts to find the mole up until this point have ended in swift failure.",
 "type": "line"
 },
 3: {
 "graph_offset": Vector2( 1020, 0 ),
 "links": {
 0: 7,
-1: 4
+1: 4,
+2: 30
 },
 "rect_size": Vector2( 324, 137 ),
-"slot_amount": 2,
+"slot_amount": 3,
 "text": "You will not disappoint me, right Scene?
 <choice>Of course not!</choice>
-<choice>I will do my best</choice>",
+<choice>I will do my best</choice>
+<choice>What do you need me to do?</choice>",
 "type": "line"
 },
 4: {
-"graph_offset": Vector2( 1500, 100 ),
+"graph_offset": Vector2( 1520, 100 ),
 "links": {
 0: 5
 },
@@ -367,8 +361,7 @@ to find the mole up until this point have ended in swift failure.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "You will need more than just your wits to defeat this
-traitor.",
+"text": "You will need more than just your wits to defeat this traitor.",
 "type": "line"
 },
 6: {
@@ -382,7 +375,7 @@ traitor.",
 "type": "line"
 },
 7: {
-"graph_offset": Vector2( 1760, -80 ),
+"graph_offset": Vector2( 1580, -80 ),
 "links": {
 0: 6
 },
@@ -442,8 +435,7 @@ but we both remeber how your final job went.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "There has been a concerning amount of leaks of secret projects
-and internal data to our competitor Duke Enterprises.",
+"text": "There has been a concerning amount of leaks of secret projects and internal data to our competitor Duke Enterprises.",
 "type": "line"
 },
 13: {
@@ -453,8 +445,7 @@ and internal data to our competitor Duke Enterprises.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Due the volume and nature of the data, the one conspiring with
-the Dukes must have extremely high security clearance.",
+"text": "Due the volume and nature of the data, the one conspiring with the Dukes must have extremely high security clearance.",
 "type": "line"
 },
 14: {
@@ -464,8 +455,7 @@ the Dukes must have extremely high security clearance.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "That is why I have given you nearly full access to our facilities.
-This traitor could be anyone.",
+"text": "That is why I have given you nearly full access to our facilities. This traitor could be anyone.",
 "type": "line"
 },
 15: {
@@ -490,8 +480,7 @@ This traitor could be anyone.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "I'm trusting you Scene. It's not a common thing in our time, but I have
-little choice.",
+"text": "I'm trusting you Scene. It's not a common thing in our time, but Veronica rarely fails me.",
 "type": "line"
 },
 17: {
@@ -501,8 +490,7 @@ little choice.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "I have always been sympathatic to societies of the past. Things were done...
-different than they are now.",
+"text": "I have always been sympathatic to societies of the past. Things were done... different than they are now.",
 "type": "line"
 },
 18: {
@@ -512,8 +500,7 @@ different than they are now.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "You were one of the best investigators of your time! It was sad
-you got caught up in the events of the old capital.",
+"text": "You were one of the best investigators of your time! It was a shame you got caught up in the events of the old capital.",
 "type": "line"
 },
 19: {
@@ -523,7 +510,7 @@ you got caught up in the events of the old capital.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "It 3024, making it around 1000 years since your death.",
+"text": "It 3024, making it around 1000 years since your death. Welcome to the future!",
 "type": "line"
 },
 20: {
@@ -535,8 +522,7 @@ you got caught up in the events of the old capital.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 3,
-"text": "We have a shipment of biological materials coming in today. It seems
-like the sort of thing we have had troubles with recently.
+"text": "We have a shipment of biological materials coming in today. It seems like the sort of thing we have had troubles with recently.
 <choice>Okay, where?</choice>
 <choice>What sort of troubles?</choice>
 <choice>Biological materials?</choice>",
@@ -592,8 +578,7 @@ like the sort of thing we have had troubles with recently.
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Once democratic powers fell, enforcement was placed in the hand of the Corporate Collective,
-the closest thing to a centralized government.",
+"text": "Once democratic powers fell, enforcement was placed in the hand of the Corporate Collective, the closest thing to the centralized government of old.",
 "type": "line"
 },
 26: {
@@ -603,8 +588,7 @@ the closest thing to a centralized government.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "In corporate politics, our opposition likes to put in place agreements that
-hinder our success. We are not alone in ignoring many of these agreements.",
+"text": "In corporate politics, our opposition likes to put in place agreements that hinder our success. We are not alone in ignoring many of these agreements.",
 "type": "line"
 },
 27: {
@@ -614,7 +598,7 @@ hinder our success. We are not alone in ignoring many of these agreements.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Anyway,",
+"text": "Anyway...",
 "type": "line"
 },
 28: {
@@ -624,8 +608,7 @@ hinder our success. We are not alone in ignoring many of these agreements.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "This building's shipping facility is located on mid levels. They should
-not be too far out of reach.",
+"text": "This building's shipping facility is located on mid levels. They should not be too far out of reach.",
 "type": "line"
 },
 29: {
@@ -636,6 +619,16 @@ not be too far out of reach.",
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
 "text": "Keep me up to date on your progress.",
+"type": "line"
+},
+30: {
+"graph_offset": Vector2( 3380, 400 ),
+"links": {
+0: 12
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "That's unusual. In that case, we'll skip the pleasantries.",
 "type": "line"
 }
 }
@@ -694,8 +687,7 @@ not be too far out of reach.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "This seems to be a Ravenetworks transport, but it's empty. Is this
-suppose to be carrying the biological shipment?",
+"text": "This seems to be a Ravenetworks transport, but it's empty. Is this suppose to be carrying the biological shipment?",
 "type": "line"
 }
 }
@@ -796,9 +788,9 @@ Cubic Carbon - MISSING",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 2,
-"text": "Yeah, we met a few days ago.
+"text": "Yeah, we worked together a few months ago.
 <choice>Weird</choice>
-<choice>No?</choice>",
+<choice>I just got here?</choice>",
 "type": "line"
 },
 3: {
@@ -812,7 +804,7 @@ Cubic Carbon - MISSING",
 "type": "line"
 },
 4: {
-"graph_offset": Vector2( 440, 0 ),
+"graph_offset": Vector2( 540, 80 ),
 "links": {
 
 },
@@ -828,7 +820,7 @@ Cubic Carbon - MISSING",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Yeah, we don't see many faces like yours around here.",
+"text": "Yeah, we don't see many faces like yours around here. It's hard to forget.",
 "type": "line"
 }
 }
@@ -836,7 +828,7 @@ Cubic Carbon - MISSING",
 11: {
 "available_nid": [  ],
 "groups": [ "Introduction" ],
-"human_readable_description": "Work who drove spacecraft",
+"human_readable_description": "Worker who drove spacecraft",
 "name": "intro_major_worker",
 "nodes": {
 1: {
@@ -859,8 +851,7 @@ Cubic Carbon - MISSING",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "During the flight over here, the navigation computer redirected to
-the lower levels.",
+"text": "During the flight over here, the navigation computer redirected to the lower levels.",
 "type": "line"
 },
 3: {
@@ -893,9 +884,7 @@ the lower levels.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "I lost the cargo after my stop at the lower levels. I was just
-following the navigation computer and it was taken by
-Ravenwork staff!",
+"text": "I lost the cargo after my stop at the lower levels. I was just following the navigation computer and it was taken by Ravenwork staff!",
 "type": "line"
 },
 6: {
@@ -971,10 +960,9 @@ Ravenwork staff!",
 1: 11,
 2: 12
 },
-"rect_size": Vector2( 324, 137 ),
+"rect_size": Vector2( 441, 221 ),
 "slot_amount": 3,
-"text": "As you can see now, you are not the first person cloned for Ravenworks profit
-margins.
+"text": "As you can see now, you are not the first Veronica cloned for Ravenworks profit margins.
 <choice>Are you the traitor?</choice>
 <choice>Return the shipment!</choice>
 <choice>We can talk</choice>",
@@ -983,7 +971,7 @@ margins.
 5: {
 "graph_offset": Vector2( 520, -120 ),
 "links": {
-
+0: 22
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
@@ -1051,8 +1039,7 @@ surpress democratic sympathizers.
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "This shipment is being delivered to Resistance medical facilities. It's going to save
-lives, not be used for creating slaves.",
+"text": "This shipment is being delivered to Resistance medical facilities. It's going to save lives, not be used for creating slaves.",
 "type": "line"
 },
 12: {
@@ -1062,8 +1049,7 @@ lives, not be used for creating slaves.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "There isn't much we can do sadly. I'm presuming you still have
-your implant.",
+"text": "There isn't much we can do sadly. I'm presuming you still have your implant.",
 "type": "line"
 },
 13: {
@@ -1073,7 +1059,7 @@ your implant.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Do you want to discuss terms of peace with us?
+"text": "Do you want to discuss terms with us?
 <choice>No</choice>",
 "type": "line"
 },
@@ -1084,7 +1070,7 @@ your implant.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "You weren't even given the choice. They programmed you to respond that way.",
+"text": "You weren't even given the choice.",
 "type": "line"
 },
 15: {
@@ -1157,6 +1143,16 @@ out for anyone but their executives.",
 "slot_amount": 1,
 "text": "But after what I learned about the old capital... Never again.",
 "type": "line"
+},
+22: {
+"graph_offset": Vector2( 1000, -120 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "It's sad to here they finally perfected the program.",
+"type": "line"
 }
 }
 },
@@ -1191,8 +1187,7 @@ out for anyone but their executives.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "Mr.Demunt has pushed for increasing security in the mid levels to account
-for the recent increase in deliveries.",
+"text": "Mr.Demunt has pushed for increasing security in the mid levels to account for the recent increase in deliveries.",
 "type": "line"
 },
 2: {
@@ -1202,8 +1197,7 @@ for the recent increase in deliveries.",
 },
 "rect_size": Vector2( 324, 137 ),
 "slot_amount": 1,
-"text": "To account for this change, we have moved all non-mandatory security officers
-to the mid and upper levels.",
+"text": "To account for this change, we have moved all non-mandatory security officers to the mid and upper levels.",
 "type": "line"
 }
 }

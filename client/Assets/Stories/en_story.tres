@@ -12,7 +12,7 @@ story = {
 "links": {
 0: 2
 },
-"text": "Welcome to Ravenworks."
+"text": "Welcome to Ravenworks. Your designation is SCENE."
 },
 2: {
 "links": {
@@ -30,7 +30,7 @@ story = {
 0: 2,
 1: 5
 },
-"text": "You are in Ravenworks cloining facility in Central City.
+"text": "You are in Ravenworks main facility in Central City.
 <choice>Okay</choice>
 <choice>Central City?</choice>"
 },
@@ -44,27 +44,25 @@ story = {
 "links": {
 0: 8
 },
-"text": "Central City is the location of the five corporate seats of power."
+"text": "Central City is the capital of the five corporate seats of power."
 },
 6: {
 "links": {
-0: 7
+0: 10
 },
 "text": "Excellent."
 },
 7: {
 "links": {
-0: 10
+0: 9
 },
-"text": "There are reports that an executive here at Ravenworks is
-working against the company's interests."
+"text": "You will now serve as an agent of Ravenworks."
 },
 8: {
 "links": {
 0: 2
 },
-"text": "You died hundreds of years ago and I do not have time to explain 
-to you over 100 years of history."
+"text": "You died hundreds of years ago and I do not have time to explain to you over 100 years of history."
 },
 9: {
 "links": {
@@ -75,34 +73,30 @@ to you over 100 years of history."
 },
 10: {
 "links": {
-0: 9,
+0: 7,
 1: 11
 },
-"text": "The CEO of Ravenworks has decided to task you with finding
-and killing this individual.
+"text": "The CEO of Ravenworks has decided to clone your template to deal with a sensitive issue.
 <choice>Okay</choice>
 <choice>Why me?</choice>"
 },
 11: {
 "links": {
-0: 9
+0: 7
 },
-"text": "I do not know."
+"text": "I do not know. "
 },
 12: {
 "links": {
 0: 13
 },
-"text": "Good. You have been given Level 1 security clearance
-in Ravenwork facilities."
+"text": "Good. You have been given Level 1 security clearance in all Ravenwork facilities."
 },
 13: {
 "links": {
 
 },
-"text": "CEO Grant Blevins would like to speak to you about the 
-investigation. His office is located at the top of
-Central Tower."
+"text": "CEO Grant Blevins would like to speak to you as soon as possible. His office is located at the top of Central Tower."
 }
 }
 },
@@ -169,14 +163,13 @@ for our services."
 },
 "text": "Did you need something?
 <choice>No</choice>
-<choice>You are the traitor!</choice>"
+<choice>What do you think of Grant Blevins?</choice>"
 },
 2: {
 "links": {
 
 },
-"text": "Don't make such false accusations. Get back to your job
-and find the real culpurit."
+"text": "He has done good for me and Ravenworks."
 },
 3: {
 "links": {
@@ -198,17 +191,18 @@ and find the real culpurit."
 "links": {
 0: 3
 },
-"text": "It's good to see they have not eliminated you yet. Most my attempts
-to find the mole up until this point have ended in swift failure."
+"text": "It's good to see they have not eliminated you yet. Most my attempts to find the mole up until this point have ended in swift failure."
 },
 3: {
 "links": {
 0: 7,
-1: 4
+1: 4,
+2: 30
 },
 "text": "You will not disappoint me, right Scene?
 <choice>Of course not!</choice>
-<choice>I will do my best</choice>"
+<choice>I will do my best</choice>
+<choice>What do you need me to do?</choice>"
 },
 4: {
 "links": {
@@ -220,8 +214,7 @@ to find the mole up until this point have ended in swift failure."
 "links": {
 0: 6
 },
-"text": "You will need more than just your wits to defeat this
-traitor."
+"text": "You will need more than just your wits to defeat this traitor."
 },
 6: {
 "links": {
@@ -267,22 +260,19 @@ but we both remeber how your final job went."
 "links": {
 0: 13
 },
-"text": "There has been a concerning amount of leaks of secret projects
-and internal data to our competitor Duke Enterprises."
+"text": "There has been a concerning amount of leaks of secret projects and internal data to our competitor Duke Enterprises."
 },
 13: {
 "links": {
 0: 14
 },
-"text": "Due the volume and nature of the data, the one conspiring with
-the Dukes must have extremely high security clearance."
+"text": "Due the volume and nature of the data, the one conspiring with the Dukes must have extremely high security clearance."
 },
 14: {
 "links": {
 0: 16
 },
-"text": "That is why I have given you nearly full access to our facilities.
-This traitor could be anyone."
+"text": "That is why I have given you nearly full access to our facilities. This traitor could be anyone."
 },
 15: {
 "links": {
@@ -299,28 +289,25 @@ This traitor could be anyone."
 "links": {
 0: 15
 },
-"text": "I'm trusting you Scene. It's not a common thing in our time, but I have
-little choice."
+"text": "I'm trusting you Scene. It's not a common thing in our time, but Veronica rarely fails me."
 },
 17: {
 "links": {
 0: 18
 },
-"text": "I have always been sympathatic to societies of the past. Things were done...
-different than they are now."
+"text": "I have always been sympathatic to societies of the past. Things were done... different than they are now."
 },
 18: {
 "links": {
 0: 15
 },
-"text": "You were one of the best investigators of your time! It was sad
-you got caught up in the events of the old capital."
+"text": "You were one of the best investigators of your time! It was a shame you got caught up in the events of the old capital."
 },
 19: {
 "links": {
 0: 15
 },
-"text": "It 3024, making it around 1000 years since your death."
+"text": "It 3024, making it around 1000 years since your death. Welcome to the future!"
 },
 20: {
 "links": {
@@ -328,8 +315,7 @@ you got caught up in the events of the old capital."
 1: 21,
 2: 22
 },
-"text": "We have a shipment of biological materials coming in today. It seems
-like the sort of thing we have had troubles with recently.
+"text": "We have a shipment of biological materials coming in today. It seems like the sort of thing we have had troubles with recently.
 <choice>Okay, where?</choice>
 <choice>What sort of troubles?</choice>
 <choice>Biological materials?</choice>"
@@ -365,34 +351,37 @@ like the sort of thing we have had troubles with recently.
 "links": {
 0: 27
 },
-"text": "Once democratic powers fell, enforcement was placed in the hand of the Corporate Collective,
-the closest thing to a centralized government."
+"text": "Once democratic powers fell, enforcement was placed in the hand of the Corporate Collective, the closest thing to the centralized government of old."
 },
 26: {
 "links": {
 0: 27
 },
-"text": "In corporate politics, our opposition likes to put in place agreements that
-hinder our success. We are not alone in ignoring many of these agreements."
+"text": "In corporate politics, our opposition likes to put in place agreements that hinder our success. We are not alone in ignoring many of these agreements."
 },
 27: {
 "links": {
 0: 28
 },
-"text": "Anyway,"
+"text": "Anyway..."
 },
 28: {
 "links": {
 0: 29
 },
-"text": "This building's shipping facility is located on mid levels. They should
-not be too far out of reach."
+"text": "This building's shipping facility is located on mid levels. They should not be too far out of reach."
 },
 29: {
 "links": {
 
 },
 "text": "Keep me up to date on your progress."
+},
+30: {
+"links": {
+0: 12
+},
+"text": "That's unusual. In that case, we'll skip the pleasantries."
 }
 }
 },
@@ -427,8 +416,7 @@ not be too far out of reach."
 "links": {
 
 },
-"text": "This seems to be a Ravenetworks transport, but it's empty. Is this
-suppose to be carrying the biological shipment?"
+"text": "This seems to be a Ravenetworks transport, but it's empty. Is this suppose to be carrying the biological shipment?"
 }
 }
 },
@@ -489,9 +477,9 @@ Cubic Carbon - MISSING"
 0: 5,
 1: 3
 },
-"text": "Yeah, we met a few days ago.
+"text": "Yeah, we worked together a few months ago.
 <choice>Weird</choice>
-<choice>No?</choice>"
+<choice>I just got here?</choice>"
 },
 3: {
 "links": {
@@ -509,7 +497,7 @@ Cubic Carbon - MISSING"
 "links": {
 
 },
-"text": "Yeah, we don't see many faces like yours around here."
+"text": "Yeah, we don't see many faces like yours around here. It's hard to forget."
 }
 }
 },
@@ -528,8 +516,7 @@ Cubic Carbon - MISSING"
 "links": {
 0: 3
 },
-"text": "During the flight over here, the navigation computer redirected to
-the lower levels."
+"text": "During the flight over here, the navigation computer redirected to the lower levels."
 },
 3: {
 "links": {
@@ -550,9 +537,7 @@ the lower levels."
 "links": {
 0: 6
 },
-"text": "I lost the cargo after my stop at the lower levels. I was just
-following the navigation computer and it was taken by
-Ravenwork staff!"
+"text": "I lost the cargo after my stop at the lower levels. I was just following the navigation computer and it was taken by Ravenwork staff!"
 },
 6: {
 "links": {
@@ -602,15 +587,14 @@ Ravenwork staff!"
 1: 11,
 2: 12
 },
-"text": "As you can see now, you are not the first person cloned for Ravenworks profit
-margins.
+"text": "As you can see now, you are not the first Veronica cloned for Ravenworks profit margins.
 <choice>Are you the traitor?</choice>
 <choice>Return the shipment!</choice>
 <choice>We can talk</choice>"
 },
 5: {
 "links": {
-
+0: 22
 },
 "text": "Oh... They truely had you didn't they."
 },
@@ -652,28 +636,26 @@ surpress democratic sympathizers.
 "links": {
 0: 15
 },
-"text": "This shipment is being delivered to Resistance medical facilities. It's going to save
-lives, not be used for creating slaves."
+"text": "This shipment is being delivered to Resistance medical facilities. It's going to save lives, not be used for creating slaves."
 },
 12: {
 "links": {
 0: 13
 },
-"text": "There isn't much we can do sadly. I'm presuming you still have
-your implant."
+"text": "There isn't much we can do sadly. I'm presuming you still have your implant."
 },
 13: {
 "links": {
 0: 14
 },
-"text": "Do you want to discuss terms of peace with us?
+"text": "Do you want to discuss terms with us?
 <choice>No</choice>"
 },
 14: {
 "links": {
 
 },
-"text": "You weren't even given the choice. They programmed you to respond that way."
+"text": "You weren't even given the choice."
 },
 15: {
 "links": {
@@ -717,6 +699,12 @@ out for anyone but their executives."
 
 },
 "text": "But after what I learned about the old capital... Never again."
+},
+22: {
+"links": {
+
+},
+"text": "It's sad to here they finally perfected the program."
 }
 }
 },
@@ -736,15 +724,13 @@ out for anyone but their executives."
 "links": {
 0: 2
 },
-"text": "Mr.Demunt has pushed for increasing security in the mid levels to account
-for the recent increase in deliveries."
+"text": "Mr.Demunt has pushed for increasing security in the mid levels to account for the recent increase in deliveries."
 },
 2: {
 "links": {
 
 },
-"text": "To account for this change, we have moved all non-mandatory security officers
-to the mid and upper levels."
+"text": "To account for this change, we have moved all non-mandatory security officers to the mid and upper levels."
 }
 }
 }
