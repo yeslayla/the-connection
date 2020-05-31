@@ -7,7 +7,7 @@ var baseGravity : float = 9.8
 
 # Player movment variables
 var maxMoveVelocity : float = 150
-var moveAcceleration : float = 125
+var moveAcceleration : float = 100
 var moveFriction : float = 65
 var jumpVelocity : float = -150
 var jumped = false
@@ -20,6 +20,35 @@ var gui # Node representing GUI object
 var interactables = [] # Objects in range to interact with
 var items = [] # Items in player inventory
 var equiped = null # Currently equiped item
+
+var saved_pos
+func _ready():
+	saved_pos = position
+
+#==================
+# Helper Functions
+#==================
+func is_movement_locked():
+	if gui and gui.is_in_dialog():
+		return true
+	return false
+	
+func check_for_nodes():
+	if not gui:
+		gui = get_node("/root/World/GUI")
+
+#==================
+# Death management
+#==================
+func handle_death():
+	print_debug("Player death not implemented!")
+	gui.fade_screen(0.25, false)
+	gui.connect("screen_fade_complete", self, "death_fade_complete")
+
+func death_fade_complete():
+	position = saved_pos
+	gui.fade_screen(1, true)
+	gui.disconnect("screen_fade_complete", self, "death_fade_complete")
 
 #==================
 # Inventory System
@@ -52,14 +81,18 @@ func interact():
 # Game Loop
 #===========
 func _physics_process(delta):
+	check_for_nodes()
+	
 	jumped = false
 	
 	# Gravity
-	motion.y += baseGravity
-	
-	if not gui:
-		gui = get_node("/root/World/GUI")
-	elif not gui.is_in_dialog():
+	if is_on_floor():
+		motion.y = 0
+	else:
+		motion.y += baseGravity
+
+	# Manage movement input
+	if not is_movement_locked():
 		user_input()
 		if jumped:
 			motion.y = jumpVelocity
@@ -68,8 +101,6 @@ func _physics_process(delta):
 	
 	# Apply velocity limits
 	moveMotion = clamp(moveMotion, -maxMoveVelocity, maxMoveVelocity)
-	
-	
 
 	# Apply velocity to frame
 	motion.x = moveMotion
@@ -84,17 +115,17 @@ func _physics_process(delta):
 # conditions
 func animation_manager(motion : float):
 
-	if not is_on_floor():
+	if not test_move(transform, Vector2(0,1)):
 			$AnimationPlayer.play("InAir")
 	elif jumped:
 		if $AnimationPlayer.current_animation != "Jump":
 			$AnimationPlayer.play("Jump")
 	elif moveMotion > 0:
-		$AnimationPlayer.playback_speed = abs(motion)/200
+		$AnimationPlayer.playback_speed = abs(motion)/100
 		if $AnimationPlayer.current_animation != "RunRight":
 			$AnimationPlayer.play("RunRight")
 	elif moveMotion < 0:
-		$AnimationPlayer.playback_speed = abs(motion)/200
+		$AnimationPlayer.playback_speed = abs(motion)/100
 		if $AnimationPlayer.current_animation != "RunLeft":
 			$AnimationPlayer.play("RunLeft")
 	else:
@@ -111,20 +142,27 @@ func user_input():
 	
 	# Move down platforms
 	if is_on_floor() and Input.is_action_just_pressed("ui_up") and Input.is_action_pressed("ui_down"):
-		var test_pos = Vector2(position.x,position.y+5)
+		var test_pos = Vector2(position.x,position.y+6)
 		if not test_move(Transform2D(0,test_pos), Vector2(0,1)):
-			position.y = position.y + 1
+			position.y = position.y + 2
 			return
 	
 	# Jumping
-	if(is_on_floor() and Input.is_action_just_pressed("ui_up")):
+	if(test_move(transform, Vector2(0,1)) and Input.is_action_just_pressed("ui_up")):
 			jumped = true
-	
+
 	# Move left and right <- & ->
+	# - - - - - - - - - - - - - - -
+	var movementModifier = 1
+
+	if not test_move(transform, Vector2(0,1)):
+		movementModifier = 0.5
+
+	# Movement input
 	if(Input.is_action_pressed("ui_left")):
-		moveMotion = -moveAcceleration
+		moveMotion = -moveAcceleration * movementModifier
 	if(Input.is_action_pressed("ui_right")):
-		moveMotion = moveAcceleration
+		moveMotion = moveAcceleration * movementModifier
 	if is_on_floor() and (!Input.is_action_pressed("ui_left") and !Input.is_action_pressed("ui_right")):
 		if moveMotion > 0:
 			moveMotion = clamp(moveMotion - moveFriction, 0, moveMotion)

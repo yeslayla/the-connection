@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+signal screen_fade_complete
+
 var in_dialog = false
 var tip_timer : Timer
 var zone_timer : Timer
@@ -14,6 +16,7 @@ func _ready():
 	$Dialog.hide()
 	$Tip.hide()
 	$ZoneLabel.hide()
+	$Fader.connect("fade_complete", self, "_on_screen_fade_complete")
 
 func is_in_dialog():
 	return in_dialog or $Dialog.is_visible_in_tree()
@@ -111,3 +114,9 @@ func fade_zone_out():
 	$ZoneLabel.modulate.a = clamp($ZoneLabel.modulate.a - 0.1, 0, 1)
 	if $ZoneLabel.modulate.a == 0:
 		zone_timer.stop()
+		
+func fade_screen(seconds = 1, fade_in=true):
+	$Fader.fade(seconds, fade_in)
+	
+func _on_screen_fade_complete():
+	emit_signal("screen_fade_complete")

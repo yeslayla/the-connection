@@ -1,28 +1,27 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/Sfx/intro/processed.wav" type="AudioStream" id=1]
 [ext_resource path="res://Scripts/Component/StorySpeaker.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Entities/NPCs/Aura.gd" type="Script" id=3]
 [ext_resource path="res://Assets/Art/Characters/aura.png" type="Texture" id=4]
-
-
+[ext_resource path="res://Scripts/Entities/Fader.gd" type="Script" id=5]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 4 )
 region = Rect2( 23, 0, 5, 16 )
 
-[sub_resource type="StreamTexture" id=3]
+[sub_resource type="StreamTexture" id=2]
 load_path = "res://.import/aura.png-d56c2c3c604fb12791bf7613004ed5a9.stex"
 
-[sub_resource type="AtlasTexture" id=4]
-atlas = SubResource( 3 )
+[sub_resource type="AtlasTexture" id=3]
+atlas = SubResource( 2 )
 region = Rect2( 19, 0, 3, 16 )
 
-[sub_resource type="AtlasTexture" id=5]
-atlas = SubResource( 3 )
+[sub_resource type="AtlasTexture" id=4]
+atlas = SubResource( 2 )
 region = Rect2( 29, 0, 3, 16 )
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 62.9439, 20.084 )
 
 [sub_resource type="Animation" id=6]
@@ -160,16 +159,16 @@ texture = SubResource( 1 )
 [node name="RightArm" type="Sprite" parent="Torso"]
 position = Vector2( -3, 0 )
 z_index = -1
-texture = SubResource( 4 )
+texture = SubResource( 3 )
 
 [node name="LeftArm" type="Sprite" parent="Torso"]
 position = Vector2( 3, 0 )
 z_index = -1
-texture = SubResource( 5 )
+texture = SubResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-shape = SubResource( 2 )
+shape = SubResource( 5 )
 
 [node name="Speaker" type="Node" parent="."]
 script = ExtResource( 2 )
@@ -189,6 +188,18 @@ color = Color( 0.54902, 0.105882, 0.105882, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Fader" type="ColorRect" parent="CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+start_with_fade_in = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Idle = SubResource( 6 )

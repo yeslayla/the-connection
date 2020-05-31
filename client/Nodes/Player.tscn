@@ -1717,7 +1717,7 @@ tracks/39/keys = {
 "times": PoolRealArray( 0, 0.5, 0.9 )
 }
 
-[sub_resource type="RectangleShape2D" id=23]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 3.06702, 6.9149 )
 
 [sub_resource type="AtlasTexture" id=7]
@@ -1817,7 +1817,7 @@ zoom = Vector2( 0.187, 0.187 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.0595379, 2.35723 )
-shape = SubResource( 23 )
+shape = SubResource( 6 )
 
 [node name="Light2D" type="Light2D" parent="."]
 texture = ExtResource( 3 )

@@ -39,7 +39,7 @@ func shoot_scene():
 	
 func start_fade():
 	timer.stop()
-	var fader = get_tree().root.get_node("World").get_node("Fader").get_child(0)
+	var fader = $CanvasLayer/Fader
 	fader.connect("fade_complete", self, "go_to_credits")
 	fader.fade(2, false)
 
