@@ -14,6 +14,7 @@ var jumped = false
 
 var moveMotion : float = 0 # Player Input ( <- & -> )
 var motion : Vector2 = Vector2(0,0) # Player's current velocity
+var floor_speed : Vector2 = Vector2.ZERO
 
 var gui # Node representing GUI object
 
@@ -104,6 +105,7 @@ func _physics_process(delta):
 
 	# Apply velocity to frame
 	motion.x = moveMotion
+	motion = motion + floor_speed
 	animation_manager(moveMotion)
 	move_and_slide(motion, Vector2(0,-1))
 

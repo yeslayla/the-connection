@@ -44,6 +44,8 @@ func start_moving(index):
 func stop_moving():
 	emit_signal("elevator_stopped")
 	moving = false
+	motion = Vector2.ZERO
+	
 	# Alert doors of updated elevator state
 	for door_path in doors:
 		get_node(door_path).on_elevator_stop(current_pos)
@@ -54,6 +56,7 @@ func _physics_process(delta):
 		var target_pos = intial_pos + relative_positions[current_pos]
 		var angle = get_angle_to(target_pos)
 		var velocity = Vector2(cos(angle),sin(angle))
+		motion = velocity * elevator_speed
 		global_position += velocity * elevator_speed * delta
 
 		# Stop when elevator is at destination

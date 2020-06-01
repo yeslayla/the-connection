@@ -40,7 +40,7 @@ reset_after_dialog = true
 position = Vector2( 182.674, 166.939 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 32.6224, 160.876 )
+position = Vector2( -418.613, 159.247 )
 
 [node name="GUI" parent="." instance=ExtResource( 4 )]
 
