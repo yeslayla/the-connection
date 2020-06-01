@@ -120,3 +120,20 @@ func fade_screen(seconds = 1, fade_in=true):
 	
 func _on_screen_fade_complete():
 	emit_signal("screen_fade_complete")
+	
+func open_elevator_menu(elevator):
+	for i in range($ElevatorDialog/Buttons.get_child_count()):
+		$ElevatorDialog/Buttons.get_child(i).queue_free()
+
+	var num = 0
+	for pos in elevator.relative_positions:
+		var button = Button.new()
+		button.text = elevator.labels[num]
+		button.connect("button_down", elevator, "_on_choice", [num])
+		$ElevatorDialog/Buttons.add_child(button)
+		num = num + 1
+
+	$ElevatorDialog.popup_centered()
+
+func close_elevator_menu():
+	$ElevatorDialog.hide()

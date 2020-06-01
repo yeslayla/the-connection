@@ -5,8 +5,6 @@
 [ext_resource path="res://Scripts/Component/LightLoader.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/Entities/Wall Light.gd" type="Script" id=4]
 
-
-
 [sub_resource type="CircleShape2D" id=1]
 radius = 200.0
 

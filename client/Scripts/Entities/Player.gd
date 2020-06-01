@@ -139,17 +139,17 @@ func user_input():
 	# Interactions
 	if Input.is_action_just_pressed("interact") and len(interactables) > 0 and not gui.is_in_dialog():
 		interact()
-	
-	# Move down platforms
-	if is_on_floor() and Input.is_action_just_pressed("ui_up") and Input.is_action_pressed("ui_down"):
-		var test_pos = Vector2(position.x,position.y+6)
-		if not test_move(Transform2D(0,test_pos), Vector2(0,1)):
-			position.y = position.y + 2
-			return
-	
+
 	# Jumping
-	if(test_move(transform, Vector2(0,1)) and Input.is_action_just_pressed("ui_up")):
-			jumped = true
+	if Input.is_action_just_pressed("ui_up"):
+		if Input.is_action_pressed("ui_down"):
+			if is_on_floor():
+				var test_pos = Vector2(position.x,position.y+6)
+				if not test_move(Transform2D(0,test_pos), Vector2(0,1)):
+					position.y = position.y + 2
+					return
+		elif(test_move(transform, Vector2(0,1))):
+				jumped = true
 
 	# Move left and right <- & ->
 	# - - - - - - - - - - - - - - -
