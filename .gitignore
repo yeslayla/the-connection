@@ -1,0 +1,50 @@
+# Godot
+client/.import/
+client/export.cfg
+client/export_presets.cfg
+api.json
+logs/
+*.translation
+    
+# Godot Mono
+client/.mono/
+client/data_*/
+
+# Scons
+.sconsign.dblite
+
+# Object script
+*.os
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app

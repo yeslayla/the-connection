@@ -4,3 +4,6 @@
 [submodule "client/Assets/Proprietary"]
 	path = client/Assets/Proprietary
 	url = git@github.com:josephbmanley/the-connection-proprietary.git
+[submodule "godot-cpp"]
+	path = godot-cpp
+	url = git@github.com:godotengine/godot-cpp.git
