@@ -42,8 +42,8 @@ margin_top = 132.0
 margin_right = 562.0
 margin_bottom = 216.0
 text = "Writing, Design, and Programming
-by Joseph Manley
-@josephbmanley"
+by Layla Manley
+@layla@pliocene.org "
 align = 1
 
 [node name="HSeparator" type="HSeparator" parent="."]
